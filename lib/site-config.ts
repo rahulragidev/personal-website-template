@@ -1,6 +1,6 @@
 /**
  * Site Configuration
- * 
+ *
  * This is the single source of truth for all site data.
  * Edit this file to update your personal information across the entire website.
  */
@@ -10,11 +10,11 @@ export const siteConfig = {
 	name: "Rahul Ragi",
 	title: "Software Engineer",
 	description: "sample description",
-	
+
 	// Site Settings
 	url: "https://yourwebsite.com", // Your website URL
 	language: "en",
-	
+
 	// Social Links (optional - add as needed)
 	social: {
 		// twitter: "https://twitter.com/yourhandle",
