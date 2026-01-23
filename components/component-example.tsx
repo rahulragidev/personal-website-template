@@ -31,6 +31,7 @@ import {
 	UserIcon,
 } from "lucide-react";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 import * as React from "react";
 import { Example, ExampleWrapper } from "@/components/example";
 import {
@@ -176,7 +177,7 @@ function FormExample() {
 		sms: false,
 		push: true,
 	});
-	const [theme, setTheme] = React.useState("light");
+	const { theme, setTheme } = useTheme();
 
 	return (
 		<Example title="Form">
@@ -300,7 +301,7 @@ function FormExample() {
 												<DropdownMenuGroup>
 													<DropdownMenuLabel>Appearance</DropdownMenuLabel>
 													<DropdownMenuRadioGroup
-														value={theme}
+														value={theme || "system"}
 														onValueChange={setTheme}
 													>
 														<DropdownMenuRadioItem value="light">

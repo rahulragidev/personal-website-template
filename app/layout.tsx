@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
+import { Providers } from "@/components/providers";
 import { getSiteMetadata, siteConfig } from "@/lib/site-config";
 import "./globals.css";
 
@@ -26,11 +27,15 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang={siteConfig.language} className={jetbrainsMono.variable}>
+		<html
+			lang={siteConfig.language}
+			className={jetbrainsMono.variable}
+			suppressHydrationWarning
+		>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
-				{children}
+				<Providers>{children}</Providers>
 			</body>
 		</html>
 	);
