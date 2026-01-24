@@ -3,14 +3,30 @@
  * These provide a polished loading experience while content streams in
  */
 
+const skeletonRotations = [
+	"rotate-2",
+	"-rotate-2",
+	"rotate-2",
+	"rotate-2",
+	"-rotate-2",
+];
+
+const skeletonOffsets = [
+	"translate-y-2",
+	"-translate-y-3",
+	"translate-y-4",
+	"-translate-y-2",
+	"translate-y-3",
+];
+
 export function PhotosSkeleton() {
 	return (
 		<div className="mt-16 sm:mt-20">
-			<div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+			<div className="-my-4 flex items-center justify-center gap-5 overflow-hidden py-8 sm:gap-8">
 				{Array.from({ length: 5 }).map((_, i) => (
 					<div
 						key={i}
-						className="relative w-44 flex-none animate-pulse overflow-hidden rounded-xl bg-muted sm:w-72 sm:rounded-2xl"
+						className={`relative w-44 flex-none animate-pulse overflow-hidden rounded-xl bg-muted sm:w-72 sm:rounded-2xl ${skeletonRotations[i]} ${skeletonOffsets[i]}`}
 					>
 						<div className="aspect-9/10" />
 					</div>

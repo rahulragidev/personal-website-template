@@ -18,11 +18,17 @@ export default function Loading() {
 
 			{/* Photos skeleton */}
 			<div className="mt-16 sm:mt-20">
-				<div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-					{Array.from({ length: 5 }).map((_, i) => (
+				<div className="-my-4 flex items-center justify-center gap-5 overflow-hidden py-8 sm:gap-8">
+					{[
+						"rotate-2 translate-y-2",
+						"-rotate-2 -translate-y-3",
+						"rotate-2 translate-y-4",
+						"rotate-2 -translate-y-2",
+						"-rotate-2 translate-y-3",
+					].map((classes, i) => (
 						<div
 							key={i}
-							className="relative w-44 flex-none animate-pulse overflow-hidden rounded-xl bg-muted sm:w-72 sm:rounded-2xl"
+							className={`relative w-44 flex-none animate-pulse overflow-hidden rounded-xl bg-muted sm:w-72 sm:rounded-2xl ${classes}`}
 						>
 							<div className="aspect-9/10" />
 						</div>
