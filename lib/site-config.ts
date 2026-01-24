@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 /**
  * Site Configuration
  *
@@ -9,33 +11,86 @@ export const siteConfig = {
 	// Personal Information
 	name: "Rahul Ragi",
 	title: "Software Engineer",
-	description: "sample description",
+	description:
+		"Full-stack developer specializing in Next.js, TypeScript, and modern web technologies.",
 
 	// Hero / Landing
-	headline:
-		"Software engineer, founder, and chess player.",
+	headline: "Software engineer, founder, and chess player.",
 	bio: "I'm Rahul Ragi, a software engineer based in Hyderabad, India. I'm the founder and CEO of gigglestack, where we develop technologies that empower regular people to explore space on their own terms.",
 
 	// Site Settings
-	url: "https://yourwebsite.com", // Your website URL
+	url: "https://rahulragi.com", // Your website URL (update this!)
 	language: "en",
+	locale: "en_US",
 
 	// Social Links (optional - add as needed)
 	social: {
-		// twitter: "https://twitter.com/yourhandle",
+		twitter: "@yourhandle", // Twitter handle for cards
 		// github: "https://github.com/yourusername",
 		// linkedin: "https://linkedin.com/in/yourprofile",
 		// email: "mailto:your@email.com",
 	},
+
+	// Open Graph Image (for social sharing)
+	// Create a 1200x630 image and place it in /public/og.png
+	ogImage: "/og.png",
 } as const;
 
-// Helper function to generate metadata
-export function getSiteMetadata() {
+/**
+ * Generate metadata for the site
+ *
+ * @see https://nextjs.org/docs/app/api-reference/functions/generate-metadata
+ */
+export function getSiteMetadata(): Metadata {
 	return {
 		title: {
 			template: `%s - ${siteConfig.name}`,
 			default: `${siteConfig.name} - ${siteConfig.title}`,
 		},
 		description: siteConfig.description,
+		metadataBase: new URL(siteConfig.url),
+
+		// Open Graph metadata
+		// @see https://nextjs.org/docs/app/api-reference/functions/generate-metadata#opengraph
+		openGraph: {
+			title: `${siteConfig.name} - ${siteConfig.title}`,
+			description: siteConfig.description,
+			url: siteConfig.url,
+			siteName: siteConfig.name,
+			locale: siteConfig.locale,
+			type: "website",
+			images: [
+				{
+					url: siteConfig.ogImage,
+					width: 1200,
+					height: 630,
+					alt: `${siteConfig.name} - ${siteConfig.title}`,
+				},
+			],
+		},
+
+		// Twitter Card metadata
+		// @see https://nextjs.org/docs/app/api-reference/functions/generate-metadata#twitter
+		twitter: {
+			card: "summary_large_image",
+			title: `${siteConfig.name} - ${siteConfig.title}`,
+			description: siteConfig.description,
+			creator: siteConfig.social.twitter,
+			images: [siteConfig.ogImage],
+		},
+
+		// Robots configuration
+		// @see https://nextjs.org/docs/app/api-reference/functions/generate-metadata#robots
+		robots: {
+			index: true,
+			follow: true,
+			googleBot: {
+				index: true,
+				follow: true,
+				"max-video-preview": -1,
+				"max-image-preview": "large",
+				"max-snippet": -1,
+			},
+		},
 	};
 }
