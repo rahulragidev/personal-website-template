@@ -11,6 +11,11 @@ export const siteConfig = {
 	title: "Software Engineer",
 	description: "sample description",
 
+	// Hero / Landing
+	headline:
+		"Software engineer, founder, and chess player.",
+	bio: "I'm Rahul Ragi, a software engineer based in Hyderabad, India. I'm the founder and CEO of gigglestack, where we develop technologies that empower regular people to explore space on their own terms.",
+
 	// Site Settings
 	url: "https://yourwebsite.com", // Your website URL
 	language: "en",
