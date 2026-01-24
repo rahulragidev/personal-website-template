@@ -1,6 +1,11 @@
+import { Suspense } from "react";
 import { ComponentExample } from "@/components/component-example";
 import { Container } from "@/components/container";
 import { Photos } from "@/components/photos";
+import {
+	ComponentExampleSkeleton,
+	PhotosSkeleton,
+} from "@/components/skeletons";
 import { siteConfig } from "@/lib/site-config";
 
 export default function Page() {
@@ -16,9 +21,15 @@ export default function Page() {
 					</p>
 				</div>
 			</Container>
-			<Photos />
+
+			<Suspense fallback={<PhotosSkeleton />}>
+				<Photos />
+			</Suspense>
+
 			<Container>
-				<ComponentExample />
+				<Suspense fallback={<ComponentExampleSkeleton />}>
+					<ComponentExample />
+				</Suspense>
 			</Container>
 		</>
 	);

@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { ThemeProvider, useTheme } from "next-themes";
 import { createContext, useEffect, useRef } from "react";
+import { WebVitals } from "@/components/web-vitals";
 
 function usePrevious<T>(value: T) {
 	const ref = useRef<T | undefined>(undefined);
@@ -48,6 +49,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
 		<AppContext.Provider value={{ previousPathname }}>
 			<ThemeProvider attribute="class" disableTransitionOnChange>
 				<ThemeWatcher />
+				<WebVitals />
 				{children}
 			</ThemeProvider>
 		</AppContext.Provider>
