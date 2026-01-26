@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
+import { Header } from "@/components/header";
 import { Providers } from "@/components/providers";
 import { getSiteMetadata, siteConfig } from "@/lib/site-config";
 import "./globals.css";
@@ -33,9 +34,21 @@ export default function RootLayout({
 			suppressHydrationWarning
 		>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background`}
 			>
-				<Providers>{children}</Providers>
+				<Providers>
+					<div className="flex w-full">
+						<div className="fixed inset-0 flex justify-center sm:px-8">
+							<div className="flex w-full max-w-7xl lg:px-8">
+								<div className="w-full rotate-2 scale-110 bg-background ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20" />
+							</div>
+						</div>
+						<div className="relative flex w-full flex-col">
+							<Header />
+							<main className="flex-auto">{children}</main>
+						</div>
+					</div>
+				</Providers>
 			</body>
 		</html>
 	);
