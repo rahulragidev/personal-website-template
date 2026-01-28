@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Providers } from "@/components/providers";
 import { getSiteMetadata, siteConfig } from "@/lib/site-config";
@@ -46,6 +47,7 @@ export default function RootLayout({
 						<div className="relative flex w-full flex-col">
 							<Header />
 							<main className="flex-auto">{children}</main>
+							<Footer />
 						</div>
 					</div>
 				</Providers>

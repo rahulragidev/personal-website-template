@@ -45,6 +45,18 @@
 	--radius-2xl: calc(var(--radius) + 8px);
 	--radius-3xl: calc(var(--radius) + 12px);
 	--radius-4xl: calc(var(--radius) + 16px);
+
+	/* Font size tokens */
+	--text-heading: 2.25rem;
+	--text-heading--line-height: 2.5rem;
+	--text-heading--letter-spacing: -0.025em;
+	--text-heading-lg: 3rem;
+	--text-heading-lg--line-height: 1;
+	--text-heading-lg--letter-spacing: -0.025em;
+	--text-body: 1rem;
+	--text-body--line-height: 1.5rem;
+	--text-nav: 0.875rem;
+	--text-nav--line-height: 1.25rem;
 }
 
 :root {

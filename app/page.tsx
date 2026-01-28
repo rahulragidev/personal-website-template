@@ -13,10 +13,10 @@ export default function Page() {
 		<>
 			<Container className="mt-9">
 				<div className="max-w-2xl">
-					<h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+					<h1 className="text-heading font-bold text-foreground sm:text-heading-lg">
 						{siteConfig.headline}
 					</h1>
-					<p className="mt-6 text-base text-muted-foreground">
+					<p className="mt-6 text-body text-muted-foreground">
 						{siteConfig.bio}
 					</p>
 				</div>
