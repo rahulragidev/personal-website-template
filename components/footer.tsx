@@ -27,9 +27,9 @@ export function Footer() {
 				<Separator />
 				<div className="flex flex-col items-center justify-between gap-6 py-10 sm:flex-row">
 					<nav className="flex gap-x-6">
-						<NavLink href="/articles">Articles</NavLink>
+						<NavLink href="/skills">Skills</NavLink>
 						<NavLink href="/projects">Projects</NavLink>
-						<NavLink href="/speaking">Speaking</NavLink>
+						<NavLink href="/changelog">Changelog</NavLink>
 						<NavLink href="/toolkit">Toolkit</NavLink>
 					</nav>
 					<p className="text-nav text-muted-foreground">
