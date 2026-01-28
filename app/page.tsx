@@ -1,6 +1,6 @@
+import { Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Mail } from "lucide-react";
 import { Container } from "@/components/container";
 import { Separator } from "@/components/ui/separator";
 import { siteConfig } from "@/lib/site-config";
@@ -63,6 +63,7 @@ export default function Page() {
 							alt={siteConfig.name}
 							sizes="(min-width: 1024px) 32rem, 20rem"
 							className="aspect-square rotate-2 bg-muted object-cover"
+							preload
 						/>
 					</div>
 				</div>

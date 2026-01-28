@@ -8,10 +8,10 @@ import {
 } from "@headlessui/react";
 import clsx from "clsx";
 import { ChevronDown, Moon, Sun, X } from "lucide-react";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
 import { Container } from "@/components/container";
 import avatarImage from "@/public/image1.jpg";
@@ -149,7 +149,7 @@ export function Header() {
 										alt=""
 										sizes="2.25rem"
 										className="h-9 w-9 bg-muted object-cover"
-										priority
+										preload
 									/>
 								</Link>
 							</div>

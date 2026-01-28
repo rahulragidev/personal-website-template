@@ -1,6 +1,6 @@
+import { ExternalLink } from "lucide-react";
 import { type Metadata } from "next";
 import Link from "next/link";
-import { ExternalLink } from "lucide-react";
 import { Container } from "@/components/container";
 
 const projects = [
@@ -35,9 +35,9 @@ export default function Projects() {
 					Things I&apos;ve built, shipped, or am still tinkering with.
 				</h1>
 				<p className="mt-6 text-body text-muted-foreground">
-					Most of these started as side projects to scratch my own itch.
-					Some turned into something real, others are still works in
-					progress. If something looks interesting, check it out.
+					Most of these started as side projects to scratch my own itch. Some
+					turned into something real, others are still works in progress. If
+					something looks interesting, check it out.
 				</p>
 			</div>
 			<ul

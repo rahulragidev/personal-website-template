@@ -31,8 +31,7 @@ function Skill({ children }: { children: React.ReactNode }) {
 
 export const metadata: Metadata = {
 	title: "Skills",
-	description:
-		"Technologies and tools I work with on a daily basis.",
+	description: "Technologies and tools I work with on a daily basis.",
 };
 
 export default function Skills() {
@@ -44,9 +43,9 @@ export default function Skills() {
 				</h1>
 				<p className="mt-6 text-body text-muted-foreground">
 					I&apos;m a full-stack engineer who leans heavily into the JavaScript
-					ecosystem. Most of my work these days is in Next.js monorepos
-					with TypeScript, but I spent years writing Java and Spring Boot
-					before that.
+					ecosystem. Most of my work these days is in Next.js monorepos with
+					TypeScript, but I spent years writing Java and Spring Boot before
+					that.
 				</p>
 			</div>
 			<div className="mt-16 sm:mt-20">

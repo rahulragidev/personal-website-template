@@ -46,8 +46,8 @@ export default function Changelog() {
 					Where I&apos;ve been and what I&apos;ve been working on.
 				</h1>
 				<p className="mt-6 text-body text-muted-foreground">
-					A timeline of my career so far — from enterprise Java to
-					full-stack TypeScript, with a few detours along the way.
+					A timeline of my career so far — from enterprise Java to full-stack
+					TypeScript, with a few detours along the way.
 				</p>
 			</div>
 			<div className="mt-16 sm:mt-20">
@@ -56,15 +56,14 @@ export default function Changelog() {
 					title="Freelance Full-Stack Developer"
 				>
 					<p>
-						Building products for startups and my own projects. Created a
-						SaaS starter kit using a Next.js monorepo with TurboRepo,
-						integrating Stripe, Resend, Hono, and BetterAuth. Focused on
-						shipping fast at minimal cost with maintainable architectures.
+						Building products for startups and my own projects. Created a SaaS
+						starter kit using a Next.js monorepo with TurboRepo, integrating
+						Stripe, Resend, Hono, and BetterAuth. Focused on shipping fast at
+						minimal cost with maintainable architectures.
 					</p>
 					<p>
 						Built Rabbitholes.ai — an infinite canvas that lets you have
-						multiple connected AI conversations. Also working on
-						Gigglestack.
+						multiple connected AI conversations. Also working on Gigglestack.
 					</p>
 				</TimelineEntry>
 				<Separator className="my-12" />
@@ -76,8 +75,8 @@ export default function Changelog() {
 					<p>
 						Worked on Askiy.ai, a sustainability and ESG tracking platform.
 						Implemented Clerk authentication with webhooks for database
-						synchronization. Built RESTful API endpoints for sustainability
-						data management.
+						synchronization. Built RESTful API endpoints for sustainability data
+						management.
 					</p>
 				</TimelineEntry>
 				<Separator className="my-12" />
@@ -87,10 +86,10 @@ export default function Changelog() {
 					company="Vinculum Group"
 				>
 					<p>
-						Five years of enterprise software development. Built supplier
-						portal systems and REST API controllers with Spring Boot.
-						Collaborated with Landmark Group, SPAR, and Hindustan Unilever
-						on large-scale vendor management platforms.
+						Five years of enterprise software development. Built supplier portal
+						systems and REST API controllers with Spring Boot. Collaborated with
+						Landmark Group, SPAR, and Hindustan Unilever on large-scale vendor
+						management platforms.
 					</p>
 				</TimelineEntry>
 				<Separator className="my-12" />
@@ -100,10 +99,9 @@ export default function Changelog() {
 					company="SPAR India (on-site)"
 				>
 					<p>
-						On-site at SPAR India in Bangalore. Built the Vendor Portal
-						handling PO electronic data transfers, Spring Boot REST APIs,
-						and client-side validations. Direct stakeholder collaboration
-						on the ground.
+						On-site at SPAR India in Bangalore. Built the Vendor Portal handling
+						PO electronic data transfers, Spring Boot REST APIs, and client-side
+						validations. Direct stakeholder collaboration on the ground.
 					</p>
 				</TimelineEntry>
 			</div>
