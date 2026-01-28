@@ -55,7 +55,7 @@ export const metadata = {
 
 export default function Uses() {
 	return (
-		<Container className="mt-9">
+		<Container className="mt-16 sm:mt-32">
 			<div className="max-w-2xl">
 				<h1 className="text-heading font-bold text-foreground sm:text-heading-lg">
 					My setup, my tools, and the stuff I actually use every day.
