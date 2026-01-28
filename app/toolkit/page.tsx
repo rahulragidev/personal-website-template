@@ -48,7 +48,7 @@ function Tool({
 }
 
 export const metadata = {
-	title: "Uses",
+	title: "Toolkit",
 	description:
 		"My setup, my tools, and the stuff I actually use every day.",
 };

@@ -31,7 +31,7 @@ export function Footer() {
 						<NavLink href="/articles">Articles</NavLink>
 						<NavLink href="/projects">Projects</NavLink>
 						<NavLink href="/speaking">Speaking</NavLink>
-						<NavLink href="/uses">Uses</NavLink>
+						<NavLink href="/toolkit">Toolkit</NavLink>
 					</nav>
 					<p className="text-nav text-muted-foreground">
 						&copy; {new Date().getFullYear()} {siteConfig.name}. All rights
