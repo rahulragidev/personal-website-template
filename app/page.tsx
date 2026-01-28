@@ -76,7 +76,7 @@ export default function Page() {
 				</div>
 				<div className="lg:pl-20">
 					<ul role="list" className="space-y-4">
-						<SocialLink href="#" icon={XIcon}>
+						<SocialLink href="https://x.com/iamrahulragi" icon={XIcon}>
 							Follow on X
 						</SocialLink>
 						<SocialLink href="#" icon={GitHubIcon}>
