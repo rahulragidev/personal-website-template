@@ -15,8 +15,8 @@ export const siteConfig = {
 		"Full-stack developer specializing in Next.js, TypeScript, and modern web technologies.",
 
 	// Hero / Landing
-	headline: "Software engineer, founder, and chess player.",
-	bio: "I'm Rahul Ragi, a software engineer based in Hyderabad, India. I'm the founder and CEO of gigglestack, where we develop technologies that empower regular people to explore space on their own terms.",
+	headline: "I build things, break things, and occasionally play chess.",
+	bio: "I'm Rahul Ragi — a software engineer based in Hyderabad, India. I spend most of my time building with Next.js, TypeScript, and whatever AI tooling is new this week. When I'm not coding, I'm probably playing chess or convincing myself that my latest side project is the one that'll stick.",
 
 	// Site Settings
 	url: "https://rahulragi.com", // Your website URL (update this!)
@@ -25,7 +25,7 @@ export const siteConfig = {
 
 	// Social Links (optional - add as needed)
 	social: {
-		twitter: "@yourhandle", // Twitter handle for cards
+		twitter: "@iamrahulragi", // Twitter handle for cards
 		// github: "https://github.com/yourusername",
 		// linkedin: "https://linkedin.com/in/yourprofile",
 		// email: "mailto:your@email.com",

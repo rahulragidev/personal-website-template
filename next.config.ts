@@ -8,6 +8,22 @@ const nextConfig: NextConfig = {
 				hostname: "images.unsplash.com",
 			},
 		],
+		formats: ["image/avif", "image/webp"],
+		// Optimize image loading
+		minimumCacheTTL: 60,
+	},
+	// Production optimizations
+	compiler: {
+		removeConsole:
+			process.env.NODE_ENV === "production"
+				? { exclude: ["error", "warn"] }
+				: false,
+	},
+	// Optimize production builds
+	productionBrowserSourceMaps: false,
+	// Reduce JavaScript bundle size - optimize package imports
+	experimental: {
+		optimizePackageImports: ["@base-ui/react"],
 	},
 };
 

@@ -38,13 +38,13 @@ export function Photos() {
 						)}
 					>
 						<div className="aspect-9/10">
-						<Image
-							src={image}
-							alt={`Photo ${imageIndex + 1}`}
-							sizes="(min-width: 640px) 18rem, 11rem"
-							placeholder="blur"
-							className="absolute inset-0 h-full w-full object-cover"
-						/>
+							<Image
+								src={image}
+								alt={`Photo ${imageIndex + 1}`}
+								sizes="(min-width: 640px) 18rem, 11rem"
+								placeholder="blur"
+								className="absolute inset-0 h-full w-full object-cover"
+							/>
 						</div>
 					</div>
 				))}
