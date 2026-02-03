@@ -15,6 +15,18 @@ const projects = [
 			"A today-centric todo app I built for myself. Automatically pulls overdue tasks into today and uses a date sidebar to browse past completed work. Local-first, no cloud.",
 	},
 	{
+		name: "PheroChain",
+		description:
+			"A compliance-first vendor orchestration platform for India's largest retailers and manufacturers. Automates supplier onboarding, GST reconciliation, and purchase order cycles with AI-powered ERP integrations.",
+		link: { href: "https://www.pherochain.com/en", label: "pherochain.com" },
+	},
+	{
+		name: "YeloChess",
+		description:
+			"A chess app I built to teach chess to kids. Lets me play friendly games with students while talking to them in real time.",
+		link: { href: "https://www.yelochess.com", label: "yelochess.com" },
+	},
+	{
 		name: "Personal Website",
 		description:
 			"This site. Built with Next.js, TypeScript, and Tailwind CSS. Open source and designed to be forked.",
