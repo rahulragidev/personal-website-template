@@ -7,7 +7,6 @@ const projects = [
 	{
 		name: "Gigglestack",
 		description: "More on this soon.",
-		link: { href: "#", label: "gigglestack.com" },
 	},
 	{
 		name: "Jotdo",
@@ -30,7 +29,7 @@ const projects = [
 		name: "Personal Website",
 		description:
 			"This site. Built with Next.js, TypeScript, and Tailwind CSS. Open source and designed to be forked.",
-		link: { href: "#", label: "github.com" },
+		link: { href: "https://github.com/rahulragidev/personal-website-template", label: "github.com" },
 	},
 ];
 

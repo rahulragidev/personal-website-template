@@ -14,7 +14,10 @@ const nextConfig: NextConfig = {
 	},
 	// Production optimizations
 	compiler: {
-		removeConsole: process.env.NODE_ENV === "production",
+		removeConsole:
+			process.env.NODE_ENV === "production"
+				? { exclude: ["error", "warn"] }
+				: false,
 	},
 	// Optimize production builds
 	productionBrowserSourceMaps: false,

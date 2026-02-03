@@ -149,7 +149,7 @@ export function Header() {
 										alt=""
 										sizes="2.25rem"
 										className="h-9 w-9 bg-muted object-cover"
-										preload
+										priority
 									/>
 								</Link>
 							</div>

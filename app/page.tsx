@@ -63,7 +63,7 @@ export default function Page() {
 							alt={siteConfig.name}
 							sizes="(min-width: 1024px) 32rem, 20rem"
 							className="aspect-square rotate-2 bg-muted object-cover"
-							preload
+							priority
 						/>
 					</div>
 				</div>
@@ -80,15 +80,15 @@ export default function Page() {
 						<SocialLink href="https://x.com/iamrahulragi" icon={XIcon}>
 							Follow on X
 						</SocialLink>
-						<SocialLink href="#" icon={GitHubIcon}>
+						<SocialLink href="https://github.com/rahulragidev" icon={GitHubIcon}>
 							Follow on GitHub
 						</SocialLink>
-						<SocialLink href="#" icon={LinkedInIcon}>
+						<SocialLink href="https://www.linkedin.com/in/rahul-ragi" icon={LinkedInIcon}>
 							Follow on LinkedIn
 						</SocialLink>
 						<Separator className="my-6" />
-						<SocialLink href="mailto:your@email.com" icon={Mail}>
-							your@email.com
+						<SocialLink href="mailto:rahulragi@gigglestack.com" icon={Mail}>
+							rahulragi@gigglestack.com
 						</SocialLink>
 					</ul>
 				</div>
