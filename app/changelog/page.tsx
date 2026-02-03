@@ -62,8 +62,9 @@ export default function Changelog() {
 						minimal cost with maintainable architectures.
 					</p>
 					<p>
-						Built Rabbitholes.ai — an infinite canvas that lets you have
-						multiple connected AI conversations. Also working on Gigglestack.
+						Contributed to Rabbitholes.ai — an infinite canvas for multiple
+						connected AI conversations. Implemented Next.js monorepo, docs, AI
+						integrations, and several improvements. Also working on Gigglestack.
 					</p>
 				</TimelineEntry>
 				<Separator className="my-12" />
