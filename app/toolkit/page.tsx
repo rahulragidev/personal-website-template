@@ -65,7 +65,7 @@ export default function Uses() {
 					that&apos;s healthy, but here&apos;s everything I use to keep up.
 				</p>
 				<p className="mt-4 text-nav text-muted-foreground">
-					Last updated January 2026
+					Last updated February 2026
 				</p>
 			</div>
 			<div className="mt-16 sm:mt-20">
@@ -126,8 +126,8 @@ export default function Uses() {
 				<ToolsSection title="Development tools">
 					<Tool title="Cursor" href="https://cursor.com">
 						My daily driver for writing code. It&apos;s VS Code under the hood
-						so all my extensions carry over, but the AI features on top make it
-						feel like a completely different editor.
+						so all my extensions carry over, but the AI features and MCP support
+						make it feel like a completely different editor.
 					</Tool>
 					<Tool title="Ghostty" href="https://ghostty.org">
 						GPU-accelerated terminal that feels genuinely native on macOS. Fast,
@@ -147,33 +147,82 @@ export default function Uses() {
 					</Tool>
 				</ToolsSection>
 				<Separator className="my-12" />
-				<ToolsSection title="AI workflow">
+				<ToolsSection title="AI assistants">
 					<Tool
 						title="Claude Code"
 						href="https://www.anthropic.com/claude-code"
 					>
-						Lives right inside my Cursor terminal. I use it for scaffolding
-						features, refactoring across files, and writing commits — basically
-						anything that touches more than a couple of files at once.
+						Lives in my terminal and powers most of my coding workflow. I use it
+						for scaffolding features, refactoring across files, and writing
+						commits. Combined with MCP servers, it connects to my design files,
+						documentation, and testing tools.
 					</Tool>
-					<Tool title="Claude Sonnet 4.5">
+					<Tool
+						title="Claude Sonnet 4.5"
+						href="https://www.anthropic.com/claude/sonnet"
+					>
 						My go-to for planning. I outline the feature or problem, and Sonnet
 						drafts a step-by-step approach before I write any code. Keeps me
 						from going down rabbit holes.
 					</Tool>
-					<Tool title="Claude Opus 4.5">
+					<Tool
+						title="Claude Opus 4.5"
+						href="https://www.anthropic.com/claude/opus"
+					>
 						The heavy lifter for implementation. When I need large, multi-file
 						changes done right in one pass, Opus handles the complexity that
 						lighter models miss.
 					</Tool>
-					<Tool title="Gemini Pro">
+					<Tool
+						title="Gemini 3 Pro"
+						href="https://gemini.google.com"
+					>
 						My second opinion for code review and debugging. Sometimes I use it
 						for planning too — getting a different model&apos;s perspective
 						often catches blind spots.
 					</Tool>
-					<Tool title="ChatGPT 5.2">
+					<Tool
+						title="ChatGPT 5.2"
+						href="https://chatgpt.com"
+					>
 						Another review and debugging lens. Bouncing the same problem off
 						multiple models surfaces edge cases faster than sticking with one.
+					</Tool>
+				</ToolsSection>
+				<Separator className="my-12" />
+				<ToolsSection title="MCP servers">
+					<Tool
+						title="Context7"
+						href="https://context7.com"
+					>
+						Pulls up-to-date, version-specific documentation straight into
+						Cursor and Claude Code. No more outdated training data — I get the
+						latest API references and library docs right when I need them.
+					</Tool>
+					<Tool
+						title="Figma MCP"
+						href="https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server"
+					>
+						Design to code without the copy-paste dance. Claude reads my Figma
+						frames directly and generates components that match the design
+						system. Cuts handoff time significantly.
+					</Tool>
+					<Tool
+						title="CodeRabbit"
+						href="https://coderabbit.ai"
+					>
+						Automated code review that catches what I miss. Runs on every PR and
+						flags potential bugs, security issues, and style inconsistencies
+						before they make it to main.
+					</Tool>
+					<Tool
+						title="Playwright MCP"
+						href="https://github.com/microsoft/playwright-mcp"
+					>
+						Browser automation for testing directly from Claude Code. I describe
+						what to test and it writes and runs the Playwright scripts — visual
+						regression, user flows, the works. No vision models needed since it
+						reads structured accessibility data.
 					</Tool>
 				</ToolsSection>
 				<Separator className="my-12" />
@@ -183,14 +232,11 @@ export default function Uses() {
 						only use a fraction of what it can do, but even the free tier is
 						worth it for clipboard history and window management alone.
 					</Tool>
-					<Tool title="Cal.com" href="https://cal.com">
-						Open-source scheduling that just works. Clean booking pages,
-						calendar sync, and I own my data. The free plan covers everything I
-						need.
-					</Tool>
-					<Tool title="Google Meet" href="https://meet.google.com">
-						No installs, no accounts required for guests, works in the browser.
-						For meetings, the less friction the better.
+					<Tool title="Rabbitholes" href="https://www.rabbitholes.ai">
+						Where I do most of my AI thinking. Instead of one long chat thread,
+						I spread conversations across a canvas and link them when they need
+						shared context. Works with whatever model I want and keeps
+						everything local.
 					</Tool>
 					<Tool title="Jotdo">
 						A small local desktop app I built for myself. Today-centric todo
