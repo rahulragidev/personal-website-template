@@ -58,11 +58,12 @@ export default function Uses() {
 					My setup, my tools, and the stuff I actually use every day.
 				</h1>
 				<p className="mt-6 text-body text-muted-foreground">
-					Nobody asks me about this stuff, but I like talking about it anyway.
-					The weird thing about being a developer is that a day without coding
-					feels like falling behind — especially with AI moving as fast as it
-					is. Even resting feels like not being productive. Not sure if
-					that&apos;s healthy, but here&apos;s everything I use to keep up.
+					Most people skip these pages. If you&apos;re still here, you probably
+					get it. AI moves fast, the tools change every week, and a day without
+					coding feels like falling behind. Not sure if that&apos;s healthy, but
+					here&apos;s everything I use to keep up. No one&apos;s paying me to
+					list any of this. Just my way of saying thanks to the tools that
+					actually help.
 				</p>
 				<p className="mt-4 text-nav text-muted-foreground">
 					Last updated February 2026
@@ -74,9 +75,9 @@ export default function Uses() {
 						title="MacBook Pro M3"
 						href="https://www.apple.com/in/macbook-pro/"
 					>
-						Switched to Apple Silicon a while back and haven&apos;t looked back.
-						The M3 runs everything I need, stays cool, and the battery actually
-						lasts long enough that I stopped carrying a charger around.
+						Switched to Apple Silicon a while back. The M3 runs everything I
+						need, stays cool, and the battery lasts long enough that I stopped
+						carrying a charger around.
 					</Tool>
 					<Tool
 						title="Samsung Smart Monitor M7 (43&quot;)"
@@ -91,7 +92,7 @@ export default function Uses() {
 						title="Apple Magic Keyboard"
 						href="https://www.apple.com/in/shop/product/mxcl3hn/a/magic-keyboard-usb-c-us-english"
 					>
-						The base model without Touch ID — the Touch ID version costs extra
+						The base model without Touch ID. The Touch ID version costs extra
 						and I didn&apos;t feel like paying for it. Low-profile,
 						rechargeable, and nice to have a proper keyboard when I&apos;m at
 						the desk.
@@ -100,7 +101,7 @@ export default function Uses() {
 						title="Apple Magic Mouse"
 						href="https://www.apple.com/in/shop/product/mxk53zm/a/magic-mouse-usb%E2%80%91c-white-multi-touch-surface"
 					>
-						I&apos;m in love with the design but I&apos;ll be honest — I barely
+						I&apos;m in love with the design but I&apos;ll be honest, I barely
 						use it. The MacBook trackpad does everything I need, so the Magic
 						Mouse mostly sits on the desk looking pretty. Still don&apos;t
 						regret buying it though.
@@ -150,7 +151,7 @@ export default function Uses() {
 						title="Claude Code"
 						href="https://www.anthropic.com/claude-code"
 					>
-						Runs in my terminal and does most of the heavy lifting — scaffolding
+						Runs in my terminal and does most of the heavy lifting. Scaffolding
 						new features, refactoring stuff across files, writing commits. I
 						hook it up to MCP servers so it can pull from Figma, docs, and run
 						tests.
@@ -180,8 +181,8 @@ export default function Uses() {
 						title="ChatGPT 5.2"
 						href="https://chatgpt.com"
 					>
-						Same idea — another set of eyes. I&apos;ll throw the same problem
-						at multiple models and compare what they say.
+						Same idea, another set of eyes. I throw the same problem at
+						multiple models and compare what they say.
 					</Tool>
 				</ToolsSection>
 				<Separator className="my-12" />
@@ -232,9 +233,9 @@ export default function Uses() {
 						everything local.
 					</Tool>
 					<Tool title="Jotdo">
-						A todo app I made for myself. It&apos;s just a list focused on today
-						— overdue stuff gets pulled forward automatically, and there&apos;s
-						a sidebar to look back at what I finished on other days.
+						A todo app I made for myself. It&apos;s just a list focused on today.
+						Overdue stuff gets pulled forward automatically, and there&apos;s a
+						sidebar to look back at what I finished on other days.
 					</Tool>
 				</ToolsSection>
 			</div>

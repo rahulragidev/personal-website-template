@@ -54,24 +54,24 @@ export default function Changelog() {
 			</div>
 			<div className="mt-16 sm:mt-20">
 				<TimelineEntry
-					date="Sep 2023 — Present"
+					date="Sep 2023 - Present"
 					title="Freelance Full-Stack Developer"
 				>
 					<p>
 						Went freelance after five years of enterprise Java. Now I help
 						startups test ideas without burning through their runway. Built a
-						SaaS starter kit I keep reusing — Next.js monorepo with BetterAuth,
+						SaaS starter kit I keep reusing. Next.js monorepo with BetterAuth,
 						Stripe, Resend, Hono backend, all wired up with Zod for type-safe
 						validation. The boring stuff you need every time, but done once.
 					</p>
 					<p>
-						Contributing to Rabbitholes.ai — an infinite canvas where you can
+						Contributing to Rabbitholes.ai, an infinite canvas where you can
 						have multiple AI conversations connected together. Set up the
 						monorepo, wrote the docs using fumadocs with an OpenAI chat
 						integration, and built out some of the AI features.
 					</p>
 					<p>
-						Also doing part-time consulting for Exterview.ai — an AI hiring
+						Also doing part-time consulting for Exterview.ai, an AI hiring
 						platform with voice interviews, resume parsing, fraud detection,
 						the whole enterprise recruitment stack. And WeThink AI, helping
 						them ship GenAI products for their clients. Mostly full-stack work,
@@ -80,12 +80,12 @@ export default function Changelog() {
 				</TimelineEntry>
 				<Separator className="my-12" />
 				<TimelineEntry
-					date="Sep 2024 — Dec 2024"
+					date="Sep 2024 - Dec 2024"
 					title="Full-Stack Developer"
-					company="WTA GenAI — Askiy.ai"
+					company="WTA GenAI / Askiy.ai"
 				>
 					<p>
-						Short contract building Askiy.ai for CBTS — an AI-powered platform
+						Short contract building Askiy.ai for CBTS, an AI-powered platform
 						for tracking sustainability metrics and ESG reporting. Set up Clerk
 						auth with webhook sync, built the RESTful APIs for utility spending
 						and sustainability data. The usual full-stack stuff, but with a lot
@@ -94,18 +94,18 @@ export default function Changelog() {
 				</TimelineEntry>
 				<Separator className="my-12" />
 				<TimelineEntry
-					date="Jul 2018 — Sep 2023"
+					date="Jul 2018 - Sep 2023"
 					title="Software Engineer"
 					company="Vinculum Group"
 				>
 					<p>
 						Five years at an omnichannel SaaS company. Spent most of my time
-						writing APIs — figure out what data the client needs, map it to
+						writing APIs. Figure out what data the client needs, map it to
 						what the database has, validate the incoming payload, handle the
 						edge cases, return something useful. Coordinated with BAs on effort
 						estimates, dealt with the daily chaos of high-volume ecommerce
-						clients — Landmark Group, SPAR, Hindustan Unilever. Java, Spring
-						Boot, SQL. This is where I learned why type safety matters — writing
+						clients like Landmark Group, SPAR, Hindustan Unilever. Java, Spring
+						Boot, SQL. This is where I learned why type safety matters. Writing
 						DTOs and validation annotations to catch bad data before it breaks
 						something downstream. Still use that thinking today, just with Zod
 						instead of Java.
@@ -113,7 +113,7 @@ export default function Changelog() {
 				</TimelineEntry>
 				<Separator className="my-12" />
 				<TimelineEntry
-					date="Oct 2018 — Dec 2020"
+					date="Oct 2018 - Dec 2020"
 					title="Software Engineer"
 					company="SPAR India (on-site)"
 				>
@@ -122,7 +122,7 @@ export default function Changelog() {
 						their SPOC. Added features like PDF and Excel exports for vendor
 						data, handled bug fixes and maintenance. Collected requirements,
 						planned sprints, coordinated with the dev team back in Noida. Built
-						the data transfer stuff — ETDs and CSV files dropped in FTP, pick
+						the data transfer stuff. ETDs and CSV files dropped in FTP, pick
 						them up, consume the data, show it in the UI. Good experience being
 						the bridge between users and the team.
 					</p>
