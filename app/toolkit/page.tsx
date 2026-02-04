@@ -74,9 +74,9 @@ export default function Uses() {
 						title="MacBook Pro M3"
 						href="https://www.apple.com/in/macbook-pro/"
 					>
-						Apple Silicon changed everything for me. The M3 handles everything I
-						throw at it without breaking a sweat, and the battery life means I
-						can work from anywhere without hunting for a power outlet.
+						Switched to Apple Silicon a while back and haven&apos;t looked back.
+						The M3 runs everything I need, stays cool, and the battery actually
+						lasts long enough that I stopped carrying a charger around.
 					</Tool>
 					<Tool
 						title="Samsung Smart Monitor M7 (43&quot;)"
@@ -109,41 +109,39 @@ export default function Uses() {
 						title="IKEA RODULF Standing Desk"
 						href="https://www.ikea.com/in/en/p/rodulf-desk-sit-stand-electric-white-s79581802/"
 					>
-						Electric sit-stand desk that reminds me to not sit for eight hours
-						straight. The motor is quiet and the height memory presets make
-						switching positions effortless.
+						Got this to remind myself to stand up sometimes. The motor is quiet
+						and I saved a couple height presets so switching takes one button
+						press.
 					</Tool>
 					<Tool
 						title="IKEA LÅNGFJÄLL Chair"
 						href="https://www.ikea.com/in/en/p/langfjaell-conference-chair-with-armrests-gunnared-beige-white-s89252792/"
 					>
-						Comfortable enough for long coding sessions without the absurd price
-						tag of the usual ergonomic chair recommendations. The armrests are a
-						nice bonus.
+						Comfortable enough for long sessions and doesn&apos;t cost a
+						fortune like most ergonomic chairs people recommend. The armrests
+						help.
 					</Tool>
 				</ToolsSection>
 				<Separator className="my-12" />
 				<ToolsSection title="Development tools">
 					<Tool title="Cursor" href="https://cursor.com">
-						My daily driver for writing code. It&apos;s VS Code under the hood
-						so all my extensions carry over, but the AI features and MCP support
-						make it feel like a completely different editor.
+						Where I write code. It&apos;s basically VS Code so my extensions
+						still work, but the AI stuff and MCP support on top make it way
+						more useful.
 					</Tool>
 					<Tool title="Ghostty" href="https://ghostty.org">
-						GPU-accelerated terminal that feels genuinely native on macOS. Fast,
-						zero-config out of the box, and the font rendering is the best
-						I&apos;ve seen in a terminal.
+						My terminal. Fast, looks good on macOS, and I didn&apos;t have to
+						configure anything. The fonts render better than any other terminal
+						I&apos;ve tried.
 					</Tool>
 					<Tool title="Nushell" href="https://www.nushell.sh">
-						A recent switch from zsh. Everything is structured data instead of
-						raw text, which makes piping and filtering output so much more
-						intuitive. Still getting used to the syntax but already hard to go
-						back.
+						Switched from zsh recently. Everything comes out as structured data
+						instead of text blobs, so filtering and piping actually makes sense.
+						The syntax is different but I&apos;m getting used to it.
 					</Tool>
 					<Tool title="Google Chrome" href="https://www.google.com/chrome/">
-						DevTools is still the best debugging environment for web
-						development. The network panel, performance profiler, and Lighthouse
-						audits are indispensable.
+						DevTools is still the best way to debug web stuff. I live in the
+						network panel and performance tab.
 					</Tool>
 				</ToolsSection>
 				<Separator className="my-12" />
@@ -152,41 +150,38 @@ export default function Uses() {
 						title="Claude Code"
 						href="https://www.anthropic.com/claude-code"
 					>
-						Lives in my terminal and powers most of my coding workflow. I use it
-						for scaffolding features, refactoring across files, and writing
-						commits. Combined with MCP servers, it connects to my design files,
-						documentation, and testing tools.
+						Runs in my terminal and does most of the heavy lifting — scaffolding
+						new features, refactoring stuff across files, writing commits. I
+						hook it up to MCP servers so it can pull from Figma, docs, and run
+						tests.
 					</Tool>
 					<Tool
 						title="Claude Sonnet 4.5"
 						href="https://www.anthropic.com/claude/sonnet"
 					>
-						My go-to for planning. I outline the feature or problem, and Sonnet
-						drafts a step-by-step approach before I write any code. Keeps me
-						from going down rabbit holes.
+						What I use for planning. I describe what I want to build and it
+						helps me think through the approach before I start writing code.
 					</Tool>
 					<Tool
 						title="Claude Opus 4.5"
 						href="https://www.anthropic.com/claude/opus"
 					>
-						The heavy lifter for implementation. When I need large, multi-file
-						changes done right in one pass, Opus handles the complexity that
-						lighter models miss.
+						For bigger changes that touch a lot of files. It gets things right
+						more often than the smaller models when the task is complicated.
 					</Tool>
 					<Tool
 						title="Gemini 3 Pro"
 						href="https://gemini.google.com"
 					>
-						My second opinion for code review and debugging. Sometimes I use it
-						for planning too — getting a different model&apos;s perspective
-						often catches blind spots.
+						I ask it to review code or help debug when I want a second opinion.
+						Different models notice different things.
 					</Tool>
 					<Tool
 						title="ChatGPT 5.2"
 						href="https://chatgpt.com"
 					>
-						Another review and debugging lens. Bouncing the same problem off
-						multiple models surfaces edge cases faster than sticking with one.
+						Same idea — another set of eyes. I&apos;ll throw the same problem
+						at multiple models and compare what they say.
 					</Tool>
 				</ToolsSection>
 				<Separator className="my-12" />
@@ -195,42 +190,40 @@ export default function Uses() {
 						title="Context7"
 						href="https://context7.com"
 					>
-						Pulls up-to-date, version-specific documentation straight into
-						Cursor and Claude Code. No more outdated training data — I get the
-						latest API references and library docs right when I need them.
+						Feeds current docs into Cursor and Claude Code so they stop
+						hallucinating old APIs. I just type &quot;use context7&quot; and it
+						grabs whatever library docs I need.
 					</Tool>
 					<Tool
 						title="Figma MCP"
 						href="https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server"
 					>
-						Design to code without the copy-paste dance. Claude reads my Figma
-						frames directly and generates components that match the design
-						system. Cuts handoff time significantly.
+						Lets Claude see my Figma files directly. I point it at a frame and
+						it writes components that actually match the design. Saves a lot of
+						back and forth.
 					</Tool>
 					<Tool
 						title="CodeRabbit"
 						href="https://coderabbit.ai"
 					>
-						Automated code review that catches what I miss. Runs on every PR and
-						flags potential bugs, security issues, and style inconsistencies
-						before they make it to main.
+						Reviews my PRs automatically. It&apos;s caught real bugs before they
+						made it to main, so I keep it running on everything now.
 					</Tool>
 					<Tool
 						title="Playwright MCP"
 						href="https://github.com/microsoft/playwright-mcp"
 					>
-						Browser automation for testing directly from Claude Code. I describe
-						what to test and it writes and runs the Playwright scripts — visual
-						regression, user flows, the works. No vision models needed since it
-						reads structured accessibility data.
+						I tell Claude what to test and it writes and runs Playwright scripts
+						for me. It reads the page structure directly instead of looking at
+						screenshots, which works better than I expected.
 					</Tool>
 				</ToolsSection>
 				<Separator className="my-12" />
 				<ToolsSection title="Productivity">
 					<Tool title="Raycast" href="https://www.raycast.com">
-						Replaced Spotlight for launching apps and running quick actions. I
-						only use a fraction of what it can do, but even the free tier is
-						worth it for clipboard history and window management alone.
+						Replaced Spotlight. I mostly use it for clipboard history and moving
+						windows around, but it does a lot more that I haven&apos;t explored
+						yet.
 					</Tool>
 					<Tool title="Rabbitholes" href="https://www.rabbitholes.ai">
 						Where I do most of my AI thinking. Instead of one long chat thread,
@@ -239,9 +232,9 @@ export default function Uses() {
 						everything local.
 					</Tool>
 					<Tool title="Jotdo">
-						A small local desktop app I built for myself. Today-centric todo
-						list that automatically pulls overdue tasks into today and uses a
-						date sidebar to browse past completed work.
+						A todo app I made for myself. It&apos;s just a list focused on today
+						— overdue stuff gets pulled forward automatically, and there&apos;s
+						a sidebar to look back at what I finished on other days.
 					</Tool>
 				</ToolsSection>
 			</div>
