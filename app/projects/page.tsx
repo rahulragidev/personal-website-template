@@ -25,12 +25,6 @@ const projects = [
 			"A chess app I built to teach chess to kids. Lets me play friendly games with students while talking to them in real time.",
 		link: { href: "https://www.yelochess.com", label: "yelochess.com" },
 	},
-	{
-		name: "Personal Website",
-		description:
-			"This site. Built with Next.js, TypeScript, and Tailwind CSS. Open source and designed to be forked.",
-		link: { href: "https://github.com/rahulragidev/personal-website-template", label: "github.com" },
-	},
 ];
 
 export const metadata: Metadata = {
