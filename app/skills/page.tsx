@@ -35,8 +35,8 @@ export default function Skills() {
 				</h1>
 				<p className="mt-6 text-body text-muted-foreground">
 					Tools change. The way I think about problems doesn&apos;t. I care
-					about understanding the layers: what runs in the browser, what runs
-					on the server, how data moves between them. Everything else is just
+					about understanding the layers: what runs in the browser, what runs on
+					the server, how data moves between them. Everything else is just
 					picking the right tool for the job.
 				</p>
 			</div>
@@ -54,11 +54,11 @@ export default function Skills() {
 				<Separator className="my-12" />
 				<SkillSection title="Backend">
 					<p>
-						Code that runs on a server. When a request comes in, figure out
-						what the client needs, validate the payload, talk to the database,
-						return something useful. I used to write this in Java with Spring
-						Boot. Now I use Node.js with Hono or Next.js API routes. Same
-						ideas, different syntax.
+						Code that runs on a server. When a request comes in, figure out what
+						the client needs, validate the payload, talk to the database, return
+						something useful. I used to write this in Java with Spring Boot. Now
+						I use Node.js with Hono or Next.js API routes. Same ideas, different
+						syntax.
 					</p>
 				</SkillSection>
 				<Separator className="my-12" />
@@ -67,17 +67,17 @@ export default function Skills() {
 						Where things get stored. Databases hold the information that
 						persists between requests. I use Drizzle or Prisma to talk to them
 						without writing raw SQL everywhere. Zod to validate data at the
-						edges. JSON to move data between client and server. The goal is
-						type safety from the database to the UI.
+						edges. JSON to move data between client and server. The goal is type
+						safety from the database to the UI.
 					</p>
 				</SkillSection>
 				<Separator className="my-12" />
 				<SkillSection title="Infrastructure">
 					<p>
-						Where the code actually runs. Vercel for hosting because deploys
-						are fast and I don&apos;t have to think about servers. TurboRepo
-						for monorepos when I have multiple apps sharing code. Git for
-						version control. The boring stuff that just needs to work.
+						Where the code actually runs. Vercel for hosting because deploys are
+						fast and I don&apos;t have to think about servers. TurboRepo for
+						monorepos when I have multiple apps sharing code. Git for version
+						control. The boring stuff that just needs to work.
 					</p>
 				</SkillSection>
 				<Separator className="my-12" />

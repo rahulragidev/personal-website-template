@@ -80,10 +80,16 @@ export default function Page() {
 						<SocialLink href="https://x.com/iamrahulragi" icon={XIcon}>
 							Follow on X
 						</SocialLink>
-						<SocialLink href="https://github.com/rahulragidev" icon={GitHubIcon}>
+						<SocialLink
+							href="https://github.com/rahulragidev"
+							icon={GitHubIcon}
+						>
 							Follow on GitHub
 						</SocialLink>
-						<SocialLink href="https://www.linkedin.com/in/rahul-ragi" icon={LinkedInIcon}>
+						<SocialLink
+							href="https://www.linkedin.com/in/rahul-ragi"
+							icon={LinkedInIcon}
+						>
 							Follow on LinkedIn
 						</SocialLink>
 						<Separator className="my-6" />

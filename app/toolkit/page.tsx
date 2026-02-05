@@ -111,24 +111,23 @@ export default function Uses() {
 						href="https://www.ikea.com/in/en/p/rodulf-desk-sit-stand-electric-white-s79581802/"
 					>
 						Got this to remind myself to stand up sometimes. The motor is quiet
-						and I saved a couple height presets so switching takes one button
-						press.
+						and switching between sitting and standing is quick enough that I
+						actually do it.
 					</Tool>
 					<Tool
 						title="IKEA LÅNGFJÄLL Chair"
 						href="https://www.ikea.com/in/en/p/langfjaell-conference-chair-with-armrests-gunnared-beige-white-s89252792/"
 					>
-						Comfortable enough for long sessions and doesn&apos;t cost a
-						fortune like most ergonomic chairs people recommend. The armrests
-						help.
+						Comfortable enough for long sessions and doesn&apos;t cost a fortune
+						like most ergonomic chairs people recommend. The armrests help.
 					</Tool>
 				</ToolsSection>
 				<Separator className="my-12" />
 				<ToolsSection title="Development tools">
 					<Tool title="Cursor" href="https://cursor.com">
 						Where I write code. It&apos;s basically VS Code so my extensions
-						still work, but the AI stuff and MCP support on top make it way
-						more useful.
+						still work, but the AI stuff and MCP support on top make it way more
+						useful.
 					</Tool>
 					<Tool title="Ghostty" href="https://ghostty.org">
 						My terminal. Fast, looks good on macOS, and I didn&apos;t have to
@@ -170,27 +169,18 @@ export default function Uses() {
 						For bigger changes that touch a lot of files. It gets things right
 						more often than the smaller models when the task is complicated.
 					</Tool>
-					<Tool
-						title="Gemini 3 Pro"
-						href="https://gemini.google.com"
-					>
+					<Tool title="Gemini 3 Pro" href="https://gemini.google.com">
 						I ask it to review code or help debug when I want a second opinion.
 						Different models notice different things.
 					</Tool>
-					<Tool
-						title="ChatGPT 5.2"
-						href="https://chatgpt.com"
-					>
-						Same idea, another set of eyes. I throw the same problem at
-						multiple models and compare what they say.
+					<Tool title="ChatGPT 5.2" href="https://chatgpt.com">
+						Same idea, another set of eyes. I throw the same problem at multiple
+						models and compare what they say.
 					</Tool>
 				</ToolsSection>
 				<Separator className="my-12" />
 				<ToolsSection title="MCP servers">
-					<Tool
-						title="Context7"
-						href="https://context7.com"
-					>
+					<Tool title="Context7" href="https://context7.com">
 						Feeds current docs into Cursor and Claude Code so they stop
 						hallucinating old APIs. I just type &quot;use context7&quot; and it
 						grabs whatever library docs I need.
@@ -203,10 +193,7 @@ export default function Uses() {
 						it writes components that actually match the design. Saves a lot of
 						back and forth.
 					</Tool>
-					<Tool
-						title="CodeRabbit"
-						href="https://coderabbit.ai"
-					>
+					<Tool title="CodeRabbit" href="https://coderabbit.ai">
 						Reviews my PRs automatically. It&apos;s caught real bugs before they
 						made it to main, so I keep it running on everything now.
 					</Tool>
@@ -227,15 +214,20 @@ export default function Uses() {
 						yet.
 					</Tool>
 					<Tool title="Rabbitholes" href="https://www.rabbitholes.ai">
-						Where I do most of my AI thinking. Instead of one long chat thread,
-						I spread conversations across a canvas and link them when they need
-						shared context. Works with whatever model I want and keeps
-						everything local.
+						Where I actually think with AI, not just chat with it. Instead of
+						one endless conversation, I break work into nodes—each a small,
+						focused context: one problem, one document, one line of thought.
+						Drop them on an infinite canvas and watch ideas branch and cluster.
+						Draw a connection between nodes and the AI knows that context
+						matters in both places. The canvas becomes a living map of my
+						projects. Can use whatever model I want per node and all my data
+						stays local.
 					</Tool>
 					<Tool title="Jotdo">
-						A todo app I made for myself. It&apos;s just a list focused on today.
-						Overdue stuff gets pulled forward automatically, and there&apos;s a
-						sidebar to look back at what I finished on other days.
+						A todo app I made for myself. It&apos;s just a list focused on
+						today. Overdue stuff gets pulled forward automatically, and
+						there&apos;s a sidebar to look back at what I finished on other
+						days.
 					</Tool>
 				</ToolsSection>
 			</div>

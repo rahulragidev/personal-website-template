@@ -15,8 +15,9 @@ export const siteConfig = {
 		"Full-stack developer working with Next.js, TypeScript, and whatever ships faster.",
 
 	// Hero / Landing
-	headline: "I build things, break things, and occasionally play chess.",
-	bio: "I'm Rahul Ragi, a software engineer based in Hyderabad, India. I spend most of my time building with Next.js, TypeScript, and whatever AI tooling is new this week. When I'm not coding, I'm probably playing chess or starting another side project.",
+	headline:
+		"Full-stack developer. I help startups ship without burning runway.",
+	bio: "I'm Rahul Ragi, based in Hyderabad. I build web apps with Next.js and TypeScript. Auth, payments, email, the boring stuff that takes forever if you build it wrong. I've done it enough times that I can do it fast. I also play rapid chess.",
 
 	// Site Settings
 	url: "https://rahulragi.com", // Your website URL (update this!)

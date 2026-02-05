@@ -46,10 +46,9 @@ export default function Changelog() {
 					Where I&apos;ve been and what I&apos;ve been working on.
 				</h1>
 				<p className="mt-6 text-body text-muted-foreground">
-					Started out writing Java at an enterprise company for five years,
-					then went freelance. Now I mostly build web apps with TypeScript,
-					care a lot about end-to-end type safety, and work on whatever
-					interests me.
+					Started out writing Java at an enterprise company for five years, then
+					went freelance. Now I mostly build web apps with TypeScript, care a
+					lot about end-to-end type safety, and work on whatever interests me.
 				</p>
 			</div>
 			<div className="mt-16 sm:mt-20">
@@ -72,9 +71,9 @@ export default function Changelog() {
 					</p>
 					<p>
 						Also doing part-time consulting for Exterview.ai, an AI hiring
-						platform with voice interviews, resume parsing, fraud detection,
-						the whole enterprise recruitment stack. And WeThink AI, helping
-						them ship GenAI products for their clients. Mostly full-stack work,
+						platform with voice interviews, resume parsing, fraud detection, the
+						whole enterprise recruitment stack. And WeThink AI, helping them
+						ship GenAI products for their clients. Mostly full-stack work,
 						keeping things moving.
 					</p>
 				</TimelineEntry>
@@ -100,9 +99,9 @@ export default function Changelog() {
 				>
 					<p>
 						Five years at an omnichannel SaaS company. Spent most of my time
-						writing APIs. Figure out what data the client needs, map it to
-						what the database has, validate the incoming payload, handle the
-						edge cases, return something useful. Coordinated with BAs on effort
+						writing APIs. Figure out what data the client needs, map it to what
+						the database has, validate the incoming payload, handle the edge
+						cases, return something useful. Coordinated with BAs on effort
 						estimates, dealt with the daily chaos of high-volume ecommerce
 						clients like Landmark Group, SPAR, Hindustan Unilever. Java, Spring
 						Boot, SQL. This is where I learned why type safety matters. Writing
@@ -118,13 +117,13 @@ export default function Changelog() {
 					company="SPAR India (on-site)"
 				>
 					<p>
-						Got sent to work on-site at SPAR in Bangalore for two years as
-						their SPOC. Added features like PDF and Excel exports for vendor
-						data, handled bug fixes and maintenance. Collected requirements,
-						planned sprints, coordinated with the dev team back in Noida. Built
-						the data transfer stuff. ETDs and CSV files dropped in FTP, pick
-						them up, consume the data, show it in the UI. Good experience being
-						the bridge between users and the team.
+						Got sent to work on-site at SPAR in Bangalore for two years as their
+						SPOC. Added features like PDF and Excel exports for vendor data,
+						handled bug fixes and maintenance. Collected requirements, planned
+						sprints, coordinated with the dev team back in Noida. Built the data
+						transfer stuff. ETDs and CSV files dropped in FTP, pick them up,
+						consume the data, show it in the UI. Good experience being the
+						bridge between users and the team.
 					</p>
 				</TimelineEntry>
 			</div>
