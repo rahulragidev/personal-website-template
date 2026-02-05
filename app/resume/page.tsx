@@ -135,7 +135,7 @@ export default function ResumePage() {
 					>
 						<li>
 							Architected and maintain a production-grade SaaS boilerplate using
-							Next.js 14, TurboRepo monorepo, BetterAuth, Stripe subscriptions,
+							Next.js 16, TurboRepo monorepo, BetterAuth, Stripe subscriptions,
 							and Hono API layer—reducing new project setup from weeks to days.
 						</li>
 						<li>
@@ -216,7 +216,7 @@ export default function ResumePage() {
 						<div>
 							<span className="font-semibold text-foreground">Frontend:</span>{" "}
 							<span className="text-muted-foreground">
-								React, Next.js 14, Tailwind CSS, Zustand, React Query
+								React, Next.js 16, Tailwind CSS, Zustand, React Query
 							</span>
 						</div>
 						<div>

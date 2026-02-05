@@ -188,7 +188,7 @@ export function ResumePDF() {
 							<Text style={styles.bullet}>•</Text>
 							<Text style={styles.bulletText}>
 								Architected and maintain a production-grade SaaS boilerplate
-								using Next.js 14, TurboRepo monorepo, BetterAuth, Stripe
+								using Next.js 16, TurboRepo monorepo, BetterAuth, Stripe
 								subscriptions, and Hono API layer—reducing new project setup
 								from weeks to days.
 							</Text>
@@ -302,7 +302,7 @@ export function ResumePDF() {
 						<View style={styles.skillCategory}>
 							<Text style={styles.skillLabel}>Frontend: </Text>
 							<Text style={styles.skillValue}>
-								React, Next.js 14, Tailwind CSS, Zustand, React Query
+								React, Next.js 16, Tailwind CSS, Zustand, React Query
 							</Text>
 						</View>
 						<View style={styles.skillCategory}>
