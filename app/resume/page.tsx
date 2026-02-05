@@ -115,12 +115,10 @@ export default function ResumePage() {
 				{/* Summary */}
 				<Section title="Summary">
 					<p className="text-nav text-muted-foreground">
-						Full-stack developer with 6+ years of experience building web
-						applications and APIs. Started with enterprise Java, now
-						specializing in TypeScript, Next.js, and Node.js. I help startups
-						ship fast without burning runway. Strong focus on type safety, clean
-						architecture, and integrating third-party services like auth,
-						payments, and email.
+						Full-stack developer. 6+ years building web apps and APIs. Started
+						with Java at an enterprise company, now I work with TypeScript,
+						Next.js, and Node.js. I do the frontend, the backend, and the
+						integrations—auth, payments, email, that kind of thing.
 					</p>
 				</Section>
 
@@ -131,19 +129,16 @@ export default function ResumePage() {
 						dates="Sep 2023 - Present"
 					>
 						<li>
-							Built reusable SaaS starter kit with Next.js monorepo, BetterAuth,
-							Stripe payments, Resend email, and Hono backend with end-to-end
-							type safety using Zod
+							Built a SaaS starter kit I keep reusing. Next.js monorepo,
+							BetterAuth, Stripe, Resend, Hono backend, Zod for validation.
 						</li>
 						<li>
-							Contributing to Rabbitholes.ai: set up monorepo architecture,
-							built documentation site with Fumadocs and OpenAI chat
-							integration, developed AI features for infinite canvas platform
+							Contributing to Rabbitholes.ai. Set up the monorepo, wrote docs
+							with Fumadocs, built AI features.
 						</li>
 						<li>
-							Consulting for Exterview.ai (AI hiring platform with voice
-							interviews, resume parsing, fraud detection) and WeThink AI (GenAI
-							products)
+							Consulting for Exterview.ai and WeThink AI. Full-stack work,
+							mostly shipping GenAI stuff.
 						</li>
 					</ExperienceItem>
 
@@ -153,12 +148,12 @@ export default function ResumePage() {
 						dates="Sep 2024 - Dec 2024"
 					>
 						<li>
-							Built Askiy.ai for CBTS: AI-powered platform for tracking
-							sustainability metrics and ESG reporting
+							Built Askiy.ai for CBTS. Sustainability tracking and ESG
+							reporting.
 						</li>
 						<li>
-							Implemented Clerk authentication with webhook sync and RESTful
-							APIs for utility spending and sustainability data
+							Set up Clerk auth with webhook sync, built APIs for utility
+							spending and sustainability data
 						</li>
 					</ExperienceItem>
 
@@ -168,19 +163,16 @@ export default function ResumePage() {
 						dates="Jul 2018 - Sep 2023"
 					>
 						<li>
-							Developed APIs for omnichannel SaaS platform serving high-volume
-							ecommerce clients including Landmark Group, SPAR, and Hindustan
-							Unilever
+							Wrote APIs for an omnichannel SaaS platform. Clients included
+							Landmark Group, SPAR, Hindustan Unilever.
 						</li>
 						<li>
-							Built data validation pipelines, coordinated with BAs on effort
-							estimates, and handled payload mapping between client requirements
-							and database schemas
+							Data validation, payload mapping, coordinating with BAs on
+							estimates. Java, Spring Boot, SQL.
 						</li>
 						<li>
-							On-site SPOC at SPAR India (Oct 2018 - Dec 2020): led feature
-							development including PDF/Excel exports, managed sprints, built
-							ETL pipelines for FTP-based data transfers
+							On-site at SPAR India for two years (Oct 2018 - Dec 2020). PDF/Excel
+							exports, sprint planning, ETL pipelines for FTP data transfers.
 						</li>
 					</ExperienceItem>
 				</Section>
@@ -237,9 +229,8 @@ export default function ResumePage() {
 								PheroChain
 							</Link>
 							<p className="text-nav text-muted-foreground">
-								Vendor management system for Indian retailers handling supplier
-								onboarding, GST reconciliation, and purchase order workflows
-								with ERP integrations
+								Vendor management for Indian retailers. Supplier onboarding, GST
+								stuff, purchase orders. Plugs into ERPs.
 							</p>
 						</div>
 						<div>
@@ -251,15 +242,15 @@ export default function ResumePage() {
 								YeloChess
 							</Link>
 							<p className="text-nav text-muted-foreground">
-								Real-time chess teaching platform enabling live games and
-								communication with students
+								Chess app I built to teach kids. Play games and talk to students
+								in real time.
 							</p>
 						</div>
 						<div>
 							<span className="font-semibold text-foreground">Jotdo</span>
 							<p className="text-nav text-muted-foreground">
-								Local-first, today-centric todo app with automatic overdue task
-								management and date-based navigation
+								Todo app I made for myself. Focused on today, pulls overdue
+								stuff forward automatically. Data stays on your machine.
 							</p>
 						</div>
 					</div>

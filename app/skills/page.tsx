@@ -34,10 +34,9 @@ export default function Skills() {
 					How I think about building software.
 				</h1>
 				<p className="mt-6 text-body text-muted-foreground">
-					Tools change. The way I think about problems doesn&apos;t. I care
-					about understanding the layers: what runs in the browser, what runs on
-					the server, how data moves between them. Everything else is just
-					picking the right tool for the job.
+					I like knowing how the layers work. What runs in the browser, what
+					runs on the server, how data moves between them. Tools change, but
+					that part stays the same.
 				</p>
 			</div>
 			<div className="mt-16 sm:mt-20">

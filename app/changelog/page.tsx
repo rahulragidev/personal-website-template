@@ -57,17 +57,15 @@ export default function Changelog() {
 					title="Freelance Full-Stack Developer"
 				>
 					<p>
-						Went freelance after five years of enterprise Java. Now I help
-						startups test ideas without burning through their runway. Built a
-						SaaS starter kit I keep reusing. Next.js monorepo with BetterAuth,
-						Stripe, Resend, Hono backend, all wired up with Zod for type-safe
-						validation. The boring stuff you need every time, but done once.
+						Went freelance after five years of enterprise Java. Built a SaaS
+						starter kit I keep reusing. Next.js monorepo with BetterAuth,
+						Stripe, Resend, Hono backend, all wired up with Zod. The boring
+						stuff you need every time, but done once.
 					</p>
 					<p>
-						Contributing to Rabbitholes.ai, an infinite canvas where you can
-						have multiple AI conversations connected together. Set up the
-						monorepo, wrote the docs using fumadocs with an OpenAI chat
-						integration, and built out some of the AI features.
+						Contributing to Rabbitholes.ai. Set up the monorepo, wrote the docs
+						using Fumadocs with an OpenAI chat integration, and built out some
+						of the AI features.
 					</p>
 					<p>
 						Also doing part-time consulting for Exterview.ai, an AI hiring
@@ -84,11 +82,9 @@ export default function Changelog() {
 					company="WTA GenAI / Askiy.ai"
 				>
 					<p>
-						Short contract building Askiy.ai for CBTS, an AI-powered platform
-						for tracking sustainability metrics and ESG reporting. Set up Clerk
-						auth with webhook sync, built the RESTful APIs for utility spending
-						and sustainability data. The usual full-stack stuff, but with a lot
-						of forms.
+						Short contract building Askiy.ai for CBTS. Sustainability tracking
+						and ESG reporting. Set up Clerk auth with webhook sync, built the
+						APIs for utility spending and sustainability data. Lots of forms.
 					</p>
 				</TimelineEntry>
 				<Separator className="my-12" />

@@ -50,9 +50,8 @@ export default function Projects() {
 					Things I&apos;ve built, shipped, or am still tinkering with.
 				</h1>
 				<p className="mt-6 text-body text-muted-foreground">
-					Most of these started as side projects to scratch my own itch. Some
-					turned into something real, others are still works in progress. If
-					something looks interesting, check it out.
+					Most of these started as side projects. Some turned into something
+					real, others are still works in progress.
 				</p>
 			</div>
 			<div className="mt-16 sm:mt-20">
@@ -65,17 +64,15 @@ export default function Projects() {
 				<Separator className="my-12" />
 				<ProjectEntry name="PheroChain" href="https://www.pherochain.com/en">
 					<p>
-						Vendor management system for large Indian retailers and
-						manufacturers. Handles supplier onboarding, GST reconciliation, and
-						purchase order workflows. Built on top of ERP integrations.
+						Vendor management for Indian retailers. Supplier onboarding, GST
+						stuff, purchase orders. Plugs into ERPs.
 					</p>
 				</ProjectEntry>
 				<Separator className="my-12" />
 				<ProjectEntry name="Jotdo">
 					<p>
-						A today-centric todo app I built for myself. Automatically pulls
-						overdue tasks into today and uses a date sidebar to browse past
-						completed work. Local-first, no cloud.
+						Todo app I built for myself. Focused on today, pulls overdue stuff
+						forward automatically. Data stays on your machine.
 					</p>
 				</ProjectEntry>
 			</div>

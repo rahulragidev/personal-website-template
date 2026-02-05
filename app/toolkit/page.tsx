@@ -58,12 +58,8 @@ export default function Uses() {
 					My setup, my tools, and the stuff I actually use every day.
 				</h1>
 				<p className="mt-6 text-body text-muted-foreground">
-					Most people skip these pages. If you&apos;re still here, you probably
-					get it. AI moves fast, the tools change every week, and a day without
-					coding feels like falling behind. Not sure if that&apos;s healthy, but
-					here&apos;s everything I use to keep up. No one&apos;s paying me to
-					list any of this. Just my way of saying thanks to the tools that
-					actually help.
+					This is what my setup looks like right now. Hardware, software, AI
+					tools. The stuff I use every day to write code and ship things.
 				</p>
 				<p className="mt-4 text-nav text-muted-foreground">
 					Last updated February 2026
@@ -214,14 +210,10 @@ export default function Uses() {
 						yet.
 					</Tool>
 					<Tool title="Rabbitholes" href="https://www.rabbitholes.ai">
-						Where I actually think with AI, not just chat with it. Instead of
-						one endless conversation, I break work into nodes—each a small,
-						focused context: one problem, one document, one line of thought.
-						Drop them on an infinite canvas and watch ideas branch and cluster.
-						Draw a connection between nodes and the AI knows that context
-						matters in both places. The canvas becomes a living map of my
-						projects. Can use whatever model I want per node and all my data
-						stays local.
+						Infinite canvas for AI conversations. Each node is its own chat with
+						its own context, and you can connect them together. I use it to
+						break problems into smaller pieces instead of one long thread. Pick
+						whatever model you want per node. Data stays local.
 					</Tool>
 					<Tool title="Jotdo">
 						A todo app I made for myself. It&apos;s just a list focused on
