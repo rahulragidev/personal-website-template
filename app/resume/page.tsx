@@ -115,10 +115,15 @@ export default function ResumePage() {
 				{/* Summary */}
 				<Section title="Summary">
 					<p className="text-nav text-muted-foreground">
-						Full-stack developer. 6+ years building web apps and APIs. Started
-						with Java at an enterprise company, now I work with TypeScript,
-						Next.js, and Node.js. I do the frontend, the backend, and the
-						integrations—auth, payments, email, that kind of thing.
+						Full-stack engineer with 6+ years of experience building scalable
+						web applications and APIs across enterprise and startup
+						environments. Led development of omnichannel retail integrations
+						processing millions of daily transactions for clients including
+						Landmark Group and Hindustan Unilever. Currently architecting
+						AI-powered SaaS products and consulting for early-stage startups on
+						full-stack development, system design, and GenAI integration.
+						Proficient in TypeScript/Node.js ecosystem with deep experience in
+						Java/Spring Boot enterprise systems.
 					</p>
 				</Section>
 
@@ -129,16 +134,26 @@ export default function ResumePage() {
 						dates="Sep 2023 - Present"
 					>
 						<li>
-							Built a SaaS starter kit I keep reusing. Next.js monorepo,
-							BetterAuth, Stripe, Resend, Hono backend, Zod for validation.
+							Architected and maintain a production-grade SaaS boilerplate using
+							Next.js 14, TurboRepo monorepo, BetterAuth, Stripe subscriptions,
+							and Hono API layer—reducing new project setup from weeks to days.
 						</li>
 						<li>
-							Contributing to Rabbitholes.ai. Set up the monorepo, wrote docs
-							with Fumadocs, built AI features.
+							Core contributor to Rabbitholes.ai (1,800+ users): established
+							monorepo architecture, built documentation site with Fumadocs, and
+							implemented coupon-to-license-key redemption system enabling
+							third-party reseller distribution.
 						</li>
 						<li>
-							Consulting for Exterview.ai and WeThink AI. Full-stack work,
-							mostly shipping GenAI stuff.
+							Developed backend services using Hono including Firecrawl web
+							scraping integration, RAG-based AI features with OpenAI embeddings,
+							and various API routes as per product requirements.
+						</li>
+						<li>
+							Technical consultant for Exterview.ai (AI interview platform) and
+							WeThink AI—delivered end-to-end features including real-time
+							transcription, LLM-powered analysis, and custom evaluation
+							pipelines.
 						</li>
 					</ExperienceItem>
 
@@ -148,12 +163,15 @@ export default function ResumePage() {
 						dates="Sep 2024 - Dec 2024"
 					>
 						<li>
-							Built Askiy.ai for CBTS. Sustainability tracking and ESG
-							reporting.
+							Built Askiy.ai from ground up for CBTS—an enterprise
+							sustainability platform enabling organizations to track carbon
+							footprint, utility spending, and generate automated ESG compliance
+							reports.
 						</li>
 						<li>
-							Set up Clerk auth with webhook sync, built APIs for utility
-							spending and sustainability data
+							Implemented Clerk authentication with webhook-based user
+							provisioning, built REST APIs for utility spending and
+							sustainability data tracking.
 						</li>
 					</ExperienceItem>
 
@@ -163,39 +181,54 @@ export default function ResumePage() {
 						dates="Jul 2018 - Sep 2023"
 					>
 						<li>
-							Wrote APIs for an omnichannel SaaS platform. Clients included
-							Landmark Group, SPAR, Hindustan Unilever.
+							Developed and maintained REST APIs for Vin eRetail, an omnichannel
+							OMS/WMS platform processing 2M+ daily orders for enterprise clients
+							including Landmark Group (6,000+ stores), SPAR India, and Hindustan
+							Unilever.
 						</li>
 						<li>
-							Data validation, payload mapping, coordinating with BAs on
-							estimates. Java, Spring Boot, SQL.
+							Led integration development for 15+ marketplace connectors (Amazon,
+							Flipkart, Myntra), implementing real-time inventory sync, order
+							routing logic, and fault-tolerant message queues.
 						</li>
 						<li>
-							On-site at SPAR India for two years (Oct 2018 - Dec 2020). PDF/Excel
-							exports, sprint planning, ETL pipelines for FTP data transfers.
+							Embedded on-site at SPAR India HQ for 2 years: owned ETL pipeline
+							development for POS/ERP data, built automated reporting system
+							generating 50+ daily Excel/PDF reports, and collaborated directly
+							with business stakeholders on sprint planning.
+						</li>
+						<li>
+							Built internal tools for MDM teams enabling better data management
+							workflows and automated audit report generation.
 						</li>
 					</ExperienceItem>
 				</Section>
 
 				{/* Skills */}
-				<Section title="Skills">
+				<Section title="Technical Skills">
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-nav">
+						<div>
+							<span className="font-semibold text-foreground">Languages:</span>{" "}
+							<span className="text-muted-foreground">
+								TypeScript, JavaScript, Java, SQL, HTML/CSS
+							</span>
+						</div>
 						<div>
 							<span className="font-semibold text-foreground">Frontend:</span>{" "}
 							<span className="text-muted-foreground">
-								React, Next.js, TypeScript, Tailwind CSS
+								React, Next.js 14, Tailwind CSS, Zustand, React Query
 							</span>
 						</div>
 						<div>
 							<span className="font-semibold text-foreground">Backend:</span>{" "}
 							<span className="text-muted-foreground">
-								Node.js, Hono, Java, Spring Boot
+								Node.js, Hono, Spring Boot, REST APIs, WebSockets
 							</span>
 						</div>
 						<div>
-							<span className="font-semibold text-foreground">Data:</span>{" "}
+							<span className="font-semibold text-foreground">Databases:</span>{" "}
 							<span className="text-muted-foreground">
-								PostgreSQL, Drizzle, Prisma, Zod
+								PostgreSQL, MySQL, Redis, Drizzle ORM, Prisma
 							</span>
 						</div>
 						<div>
@@ -203,15 +236,13 @@ export default function ResumePage() {
 								Infrastructure:
 							</span>{" "}
 							<span className="text-muted-foreground">
-								Vercel, Git, TurboRepo
+								Vercel, AWS (S3, Lambda), Docker, TurboRepo, Git
 							</span>
 						</div>
-						<div className="sm:col-span-2">
-							<span className="font-semibold text-foreground">
-								Integrations:
-							</span>{" "}
+						<div>
+							<span className="font-semibold text-foreground">AI/ML:</span>{" "}
 							<span className="text-muted-foreground">
-								Clerk, BetterAuth, Stripe, Resend, OpenAI
+								OpenAI API, LangChain, RAG, Embeddings, Prompt Engineering
 							</span>
 						</div>
 					</div>
@@ -229,8 +260,10 @@ export default function ResumePage() {
 								PheroChain
 							</Link>
 							<p className="text-nav text-muted-foreground">
-								Vendor management for Indian retailers. Supplier onboarding, GST
-								stuff, purchase orders. Plugs into ERPs.
+								B2B vendor management platform for Indian retailers—handles
+								supplier onboarding, GST compliance verification, purchase order
+								workflows, and ERP integration. Built with Next.js, PostgreSQL,
+								and custom middleware for Tally/SAP data sync.
 							</p>
 						</div>
 						<div>
@@ -242,15 +275,19 @@ export default function ResumePage() {
 								YeloChess
 							</Link>
 							<p className="text-nav text-muted-foreground">
-								Chess app I built to teach kids. Play games and talk to students
-								in real time.
+								Real-time chess coaching platform with reactive game sync using
+								Convex database, integrated Lichess puzzle database for training
+								exercises. Teaches 20+ students weekly. Stack: Next.js,
+								Chess.js, react-chessboard, Convex.
 							</p>
 						</div>
 						<div>
 							<span className="font-semibold text-foreground">Jotdo</span>
 							<p className="text-nav text-muted-foreground">
-								Todo app I made for myself. Focused on today, pulls overdue
-								stuff forward automatically. Data stays on your machine.
+								Privacy-first task manager with local-only storage using
+								IndexedDB. Features automatic task rollover, daily focus view,
+								and keyboard-driven UX. Built with React and Zustand for offline
+								state management.
 							</p>
 						</div>
 					</div>

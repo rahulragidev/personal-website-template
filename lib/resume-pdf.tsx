@@ -161,10 +161,15 @@ export function ResumePDF() {
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>Summary</Text>
 					<Text style={styles.summary}>
-						Full-stack developer. 6+ years building web apps and APIs. Started
-						with Java at an enterprise company, now I work with TypeScript,
-						Next.js, and Node.js. I do the frontend, the backend, and the
-						integrations—auth, payments, email, that kind of thing.
+						Full-stack engineer with 6+ years of experience building scalable
+						web applications and APIs across enterprise and startup
+						environments. Led development of omnichannel retail integrations
+						processing millions of daily transactions for clients including
+						Landmark Group and Hindustan Unilever. Currently architecting
+						AI-powered SaaS products and consulting for early-stage startups on
+						full-stack development, system design, and GenAI integration.
+						Proficient in TypeScript/Node.js ecosystem with deep experience in
+						Java/Spring Boot enterprise systems.
 					</Text>
 				</View>
 
@@ -182,22 +187,36 @@ export function ResumePDF() {
 						<View style={styles.bulletPoint}>
 							<Text style={styles.bullet}>•</Text>
 							<Text style={styles.bulletText}>
-								Built a SaaS starter kit I keep reusing. Next.js monorepo,
-								BetterAuth, Stripe, Resend, Hono backend, Zod for validation.
+								Architected and maintain a production-grade SaaS boilerplate
+								using Next.js 14, TurboRepo monorepo, BetterAuth, Stripe
+								subscriptions, and Hono API layer—reducing new project setup
+								from weeks to days.
 							</Text>
 						</View>
 						<View style={styles.bulletPoint}>
 							<Text style={styles.bullet}>•</Text>
 							<Text style={styles.bulletText}>
-								Contributing to Rabbitholes.ai. Set up the monorepo, wrote docs
-								with Fumadocs, built AI features.
+								Core contributor to Rabbitholes.ai (1,800+ users): established
+								monorepo architecture, built documentation site with Fumadocs,
+								and implemented coupon-to-license-key redemption system enabling
+								third-party reseller distribution.
 							</Text>
 						</View>
 						<View style={styles.bulletPoint}>
 							<Text style={styles.bullet}>•</Text>
 							<Text style={styles.bulletText}>
-								Consulting for Exterview.ai and WeThink AI. Full-stack work,
-								mostly shipping GenAI stuff.
+								Developed backend services using Hono including Firecrawl web
+								scraping integration, RAG-based AI features with OpenAI
+								embeddings, and various API routes as per product requirements.
+							</Text>
+						</View>
+						<View style={styles.bulletPoint}>
+							<Text style={styles.bullet}>•</Text>
+							<Text style={styles.bulletText}>
+								Technical consultant for Exterview.ai (AI interview platform)
+								and WeThink AI—delivered end-to-end features including
+								real-time transcription, LLM-powered analysis, and custom
+								evaluation pipelines.
 							</Text>
 						</View>
 					</View>
@@ -211,15 +230,18 @@ export function ResumePDF() {
 						<View style={styles.bulletPoint}>
 							<Text style={styles.bullet}>•</Text>
 							<Text style={styles.bulletText}>
-								Built Askiy.ai for CBTS. Sustainability tracking and ESG
-								reporting.
+								Built Askiy.ai from ground up for CBTS—an enterprise
+								sustainability platform enabling organizations to track carbon
+								footprint, utility spending, and generate automated ESG
+								compliance reports.
 							</Text>
 						</View>
 						<View style={styles.bulletPoint}>
 							<Text style={styles.bullet}>•</Text>
 							<Text style={styles.bulletText}>
-								Set up Clerk auth with webhook sync, built APIs for utility
-								spending and sustainability data.
+								Implemented Clerk authentication with webhook-based user
+								provisioning, built REST APIs for utility spending and
+								sustainability data tracking.
 							</Text>
 						</View>
 					</View>
@@ -233,22 +255,35 @@ export function ResumePDF() {
 						<View style={styles.bulletPoint}>
 							<Text style={styles.bullet}>•</Text>
 							<Text style={styles.bulletText}>
-								Wrote APIs for an omnichannel SaaS platform. Clients included
-								Landmark Group, SPAR, Hindustan Unilever.
+								Developed and maintained REST APIs for Vin eRetail, an
+								omnichannel OMS/WMS platform processing 2M+ daily orders for
+								enterprise clients including Landmark Group (6,000+ stores),
+								SPAR India, and Hindustan Unilever.
 							</Text>
 						</View>
 						<View style={styles.bulletPoint}>
 							<Text style={styles.bullet}>•</Text>
 							<Text style={styles.bulletText}>
-								Data validation, payload mapping, coordinating with BAs on
-								estimates. Java, Spring Boot, SQL.
+								Led integration development for 15+ marketplace connectors
+								(Amazon, Flipkart, Myntra), implementing real-time inventory
+								sync, order routing logic, and fault-tolerant message queues.
 							</Text>
 						</View>
 						<View style={styles.bulletPoint}>
 							<Text style={styles.bullet}>•</Text>
 							<Text style={styles.bulletText}>
-								On-site at SPAR India for two years (Oct 2018 - Dec 2020).
-								PDF/Excel exports, sprint planning, ETL pipelines for FTP data.
+								Embedded on-site at SPAR India HQ for 2 years: owned ETL
+								pipeline development for POS/ERP data, built automated
+								reporting system generating 50+ daily Excel/PDF reports, and
+								collaborated directly with business stakeholders on sprint
+								planning.
+							</Text>
+						</View>
+						<View style={styles.bulletPoint}>
+							<Text style={styles.bullet}>•</Text>
+							<Text style={styles.bulletText}>
+								Built internal tools for MDM teams enabling better data
+								management workflows and automated audit report generation.
 							</Text>
 						</View>
 					</View>
@@ -256,36 +291,42 @@ export function ResumePDF() {
 
 				{/* Skills */}
 				<View style={styles.section}>
-					<Text style={styles.sectionTitle}>Skills</Text>
+					<Text style={styles.sectionTitle}>Technical Skills</Text>
 					<View style={styles.skillsGrid}>
+						<View style={styles.skillCategory}>
+							<Text style={styles.skillLabel}>Languages: </Text>
+							<Text style={styles.skillValue}>
+								TypeScript, JavaScript, Java, SQL, HTML/CSS
+							</Text>
+						</View>
 						<View style={styles.skillCategory}>
 							<Text style={styles.skillLabel}>Frontend: </Text>
 							<Text style={styles.skillValue}>
-								React, Next.js, TypeScript, Tailwind CSS, HTML, CSS
+								React, Next.js 14, Tailwind CSS, Zustand, React Query
 							</Text>
 						</View>
 						<View style={styles.skillCategory}>
 							<Text style={styles.skillLabel}>Backend: </Text>
 							<Text style={styles.skillValue}>
-								Node.js, Hono, Java, Spring Boot, REST APIs
+								Node.js, Hono, Spring Boot, REST APIs, WebSockets
 							</Text>
 						</View>
 						<View style={styles.skillCategory}>
-							<Text style={styles.skillLabel}>Data: </Text>
+							<Text style={styles.skillLabel}>Databases: </Text>
 							<Text style={styles.skillValue}>
-								PostgreSQL, Drizzle ORM, Prisma, Zod, SQL
+								PostgreSQL, MySQL, Redis, Drizzle ORM, Prisma
 							</Text>
 						</View>
 						<View style={styles.skillCategory}>
 							<Text style={styles.skillLabel}>Infrastructure: </Text>
 							<Text style={styles.skillValue}>
-								Vercel, Git, TurboRepo, Monorepos
+								Vercel, AWS (S3, Lambda), Docker, TurboRepo, Git
 							</Text>
 						</View>
 						<View style={styles.skillCategory}>
-							<Text style={styles.skillLabel}>Integrations: </Text>
+							<Text style={styles.skillLabel}>AI/ML: </Text>
 							<Text style={styles.skillValue}>
-								Clerk, BetterAuth, Stripe, Resend, OpenAI
+								OpenAI API, LangChain, RAG, Embeddings, Prompt Engineering
 							</Text>
 						</View>
 					</View>
@@ -297,22 +338,28 @@ export function ResumePDF() {
 					<View style={styles.projectItem}>
 						<Text style={styles.projectName}>PheroChain (pherochain.com)</Text>
 						<Text style={styles.projectDescription}>
-							Vendor management for Indian retailers. Supplier onboarding, GST
-							stuff, purchase orders. Plugs into ERPs.
+							B2B vendor management platform for Indian retailers—handles
+							supplier onboarding, GST compliance verification, purchase order
+							workflows, and ERP integration. Built with Next.js, PostgreSQL,
+							and custom middleware for Tally/SAP data sync.
 						</Text>
 					</View>
 					<View style={styles.projectItem}>
 						<Text style={styles.projectName}>YeloChess (yelochess.com)</Text>
 						<Text style={styles.projectDescription}>
-							Chess app I built to teach kids. Play games and talk to students
-							in real time.
+							Real-time chess coaching platform with reactive game sync using
+							Convex database, integrated Lichess puzzle database for training
+							exercises. Teaches 20+ students weekly. Stack: Next.js, Chess.js,
+							react-chessboard, Convex.
 						</Text>
 					</View>
 					<View style={styles.projectItem}>
 						<Text style={styles.projectName}>Jotdo</Text>
 						<Text style={styles.projectDescription}>
-							Todo app I made for myself. Focused on today, pulls overdue stuff
-							forward automatically. Data stays on your machine.
+							Privacy-first task manager with local-only storage using
+							IndexedDB. Features automatic task rollover, daily focus view,
+							and keyboard-driven UX. Built with React and Zustand for offline
+							state management.
 						</Text>
 					</View>
 				</View>
