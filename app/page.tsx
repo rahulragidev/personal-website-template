@@ -93,8 +93,8 @@ export default function Page() {
 							Follow on LinkedIn
 						</SocialLink>
 						<Separator className="my-6" />
-						<SocialLink href="mailto:rahulragi@gigglestack.com" icon={Mail}>
-							rahulragi@gigglestack.com
+						<SocialLink href="mailto:iamrahulragi@gmail.com" icon={Mail}>
+							iamrahulragi@gmail.com
 						</SocialLink>
 					</ul>
 				</div>

@@ -80,10 +80,10 @@ export default function ResumePage() {
 					<span>Hyderabad, India</span>
 					<span>•</span>
 					<Link
-						href="mailto:rahulragi@gigglestack.com"
+						href="mailto:iamrahulragi@gmail.com"
 						className="text-primary hover:underline"
 					>
-						rahulragi@gigglestack.com
+						iamrahulragi@gmail.com
 					</Link>
 					<span>•</span>
 					<Link

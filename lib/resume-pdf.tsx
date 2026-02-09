@@ -142,8 +142,8 @@ export function ResumePDF() {
 					<Text style={styles.title}>Full-Stack Software Engineer</Text>
 					<View style={styles.contactRow}>
 						<Text style={styles.contactItem}>Hyderabad, India</Text>
-						<Link style={styles.link} src="mailto:rahulragi@gigglestack.com">
-							rahulragi@gigglestack.com
+						<Link style={styles.link} src="mailto:iamrahulragi@gmail.com">
+							iamrahulragi@gmail.com
 						</Link>
 						<Link style={styles.link} src="https://rahulragi.com">
 							rahulragi.com

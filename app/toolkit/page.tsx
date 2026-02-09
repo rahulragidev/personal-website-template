@@ -159,7 +159,7 @@ export default function Uses() {
 						helps me think through the approach before I start writing code.
 					</Tool>
 					<Tool
-						title="Claude Opus 4.5"
+						title="Claude Opus 4.6"
 						href="https://www.anthropic.com/claude/opus"
 					>
 						For bigger changes that touch a lot of files. It gets things right
@@ -169,9 +169,9 @@ export default function Uses() {
 						I ask it to review code or help debug when I want a second opinion.
 						Different models notice different things.
 					</Tool>
-					<Tool title="ChatGPT 5.2" href="https://chatgpt.com">
-						Same idea, another set of eyes. I throw the same problem at multiple
-						models and compare what they say.
+					<Tool title="Codex 5.3 Research" href="https://openai.com/index/introducing-codex/">
+						OpenAI&apos;s research-focused coding model. Good for digging into
+						unfamiliar codebases and exploring solutions I haven&apos;t considered.
 					</Tool>
 				</ToolsSection>
 				<Separator className="my-12" />
