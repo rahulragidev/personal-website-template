@@ -169,7 +169,7 @@ export default function Uses() {
 						I ask it to review code or help debug when I want a second opinion.
 						Different models notice different things.
 					</Tool>
-					<Tool title="Codex 5.3 Research" href="https://openai.com/index/introducing-codex/">
+					<Tool title="GPT-5.3-Codex" href="https://openai.com/index/introducing-codex/">
 						OpenAI&apos;s research-focused coding model. Good for digging into
 						unfamiliar codebases and exploring solutions I haven&apos;t considered.
 					</Tool>
