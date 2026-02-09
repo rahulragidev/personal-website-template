@@ -34,8 +34,8 @@ export function Footer() {
 						<NavLink href="/resume">Resume</NavLink>
 					</nav>
 					<p className="text-nav text-muted-foreground">
-						&copy; {new Date().getFullYear()} {siteConfig.name}. All rights
-						reserved.
+						&copy; {new Date().getFullYear()} {siteConfig.name}. No rights
+						reserved, honestly. Just don&apos;t claim you wrote it.
 					</p>
 				</div>
 			</Container>
