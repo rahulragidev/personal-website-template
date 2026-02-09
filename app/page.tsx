@@ -80,15 +80,21 @@ export default function Page() {
 						<SocialLink href="https://x.com/iamrahulragi" icon={XIcon}>
 							Follow on X
 						</SocialLink>
-						<SocialLink href="https://github.com/rahulragidev" icon={GitHubIcon}>
+						<SocialLink
+							href="https://github.com/rahulragidev"
+							icon={GitHubIcon}
+						>
 							Follow on GitHub
 						</SocialLink>
-						<SocialLink href="https://www.linkedin.com/in/rahul-ragi" icon={LinkedInIcon}>
+						<SocialLink
+							href="https://www.linkedin.com/in/rahul-ragi"
+							icon={LinkedInIcon}
+						>
 							Follow on LinkedIn
 						</SocialLink>
 						<Separator className="my-6" />
-						<SocialLink href="mailto:rahulragi@gigglestack.com" icon={Mail}>
-							rahulragi@gigglestack.com
+						<SocialLink href="mailto:iamrahulragi@gmail.com" icon={Mail}>
+							iamrahulragi@gmail.com
 						</SocialLink>
 					</ul>
 				</div>

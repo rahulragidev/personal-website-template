@@ -46,63 +46,80 @@ export default function Changelog() {
 					Where I&apos;ve been and what I&apos;ve been working on.
 				</h1>
 				<p className="mt-6 text-body text-muted-foreground">
-					A timeline of my career so far — from enterprise Java to full-stack
-					TypeScript, with a few detours along the way.
+					Started out writing Java at an enterprise company for five years, then
+					went freelance. Now I mostly build web apps with TypeScript, care a
+					lot about end-to-end type safety, and work on whatever interests me.
 				</p>
 			</div>
 			<div className="mt-16 sm:mt-20">
 				<TimelineEntry
-					date="Sep 2023 — Present"
+					date="Sep 2023 - Present"
 					title="Freelance Full-Stack Developer"
 				>
 					<p>
-						Building products for startups and my own projects. Created a SaaS
-						starter kit using a Next.js monorepo with TurboRepo, integrating
-						Stripe, Resend, Hono, and BetterAuth. Focused on shipping fast at
-						minimal cost with maintainable architectures.
+						Went freelance after five years of enterprise Java. Built a SaaS
+						starter kit I keep reusing. Next.js monorepo with BetterAuth,
+						Stripe, Resend, Hono backend, all wired up with Zod. The boring
+						stuff you need every time, but done once.
 					</p>
 					<p>
-						Contributed to Rabbitholes.ai — an infinite canvas for multiple
-						connected AI conversations. Implemented Next.js monorepo, docs, AI
-						integrations, and several improvements. Also working on Gigglestack.
+						Contributing to Rabbitholes.ai. Set up the monorepo, wrote the docs
+						using Fumadocs with an OpenAI chat integration, and built out some
+						of the AI features.
+					</p>
+					<p>
+						Also doing part-time consulting for Exterview.ai, an AI hiring
+						platform with voice interviews, resume parsing, fraud detection, the
+						whole enterprise recruitment stack. And WeThink AI, helping them
+						ship GenAI products for their clients. Mostly full-stack work,
+						keeping things moving.
 					</p>
 				</TimelineEntry>
 				<Separator className="my-12" />
 				<TimelineEntry
-					date="Sep 2024 — Dec 2024"
+					date="Sep 2024 - Dec 2024"
 					title="Full-Stack Developer"
-					company="WTA GenAI — Askiy.ai"
+					company="WTA GenAI / Askiy.ai"
 				>
 					<p>
-						Worked on Askiy.ai, a sustainability and ESG tracking platform.
-						Implemented Clerk authentication with webhooks for database
-						synchronization. Built RESTful API endpoints for sustainability data
-						management.
+						Short contract building Askiy.ai for CBTS. Sustainability tracking
+						and ESG reporting. Set up Clerk auth with webhook sync, built the
+						APIs for utility spending and sustainability data. Lots of forms.
 					</p>
 				</TimelineEntry>
 				<Separator className="my-12" />
 				<TimelineEntry
-					date="Jul 2018 — Sep 2023"
+					date="Jul 2018 - Sep 2023"
 					title="Software Engineer"
 					company="Vinculum Group"
 				>
 					<p>
-						Five years of enterprise software development. Built supplier portal
-						systems and REST API controllers with Spring Boot. Collaborated with
-						Landmark Group, SPAR, and Hindustan Unilever on large-scale vendor
-						management platforms.
+						Five years at an omnichannel SaaS company. Spent most of my time
+						writing APIs. Figure out what data the client needs, map it to what
+						the database has, validate the incoming payload, handle the edge
+						cases, return something useful. Coordinated with BAs on effort
+						estimates, dealt with the daily chaos of high-volume ecommerce
+						clients like Landmark Group, SPAR, Hindustan Unilever. Java, Spring
+						Boot, SQL. This is where I learned why type safety matters. Writing
+						DTOs and validation annotations to catch bad data before it breaks
+						something downstream. Still use that thinking today, just with Zod
+						instead of Java.
 					</p>
 				</TimelineEntry>
 				<Separator className="my-12" />
 				<TimelineEntry
-					date="Oct 2018 — Dec 2020"
+					date="Oct 2018 - Dec 2020"
 					title="Software Engineer"
 					company="SPAR India (on-site)"
 				>
 					<p>
-						On-site at SPAR India in Bangalore. Built the Vendor Portal handling
-						PO electronic data transfers, Spring Boot REST APIs, and client-side
-						validations. Direct stakeholder collaboration on the ground.
+						Got sent to work on-site at SPAR in Bangalore for two years as their
+						SPOC. Added features like PDF and Excel exports for vendor data,
+						handled bug fixes and maintenance. Collected requirements, planned
+						sprints, coordinated with the dev team back in Noida. Built the data
+						transfer stuff. ETDs and CSV files dropped in FTP, pick them up,
+						consume the data, show it in the UI. Good experience being the
+						bridge between users and the team.
 					</p>
 				</TimelineEntry>
 			</div>

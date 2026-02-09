@@ -12,11 +12,11 @@ export const siteConfig = {
 	name: "Rahul Ragi",
 	title: "Software Engineer",
 	description:
-		"Full-stack developer specializing in Next.js, TypeScript, and modern web technologies.",
+		"Full-stack developer. Next.js, TypeScript, and Node.js.",
 
 	// Hero / Landing
-	headline: "I build things, break things, and occasionally play chess.",
-	bio: "I'm Rahul Ragi — a software engineer based in Hyderabad, India. I spend most of my time building with Next.js, TypeScript, and whatever AI tooling is new this week. When I'm not coding, I'm probably playing chess or convincing myself that my latest side project is the one that'll stick.",
+	headline: "Rahul here.",
+	bio: "Full-stack developer. I build web apps with Next.js and TypeScript, everything from frontend to deployment. Based in Hyderabad. I also teach chess to beginners, mostly kids.",
 
 	// Site Settings
 	url: "https://rahulragi.com", // Your website URL (update this!)

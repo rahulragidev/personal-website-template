@@ -14,24 +14,16 @@ function SkillSection({
 			<h2 className="text-body font-semibold text-primary lg:sticky lg:top-24 lg:self-start">
 				{title}
 			</h2>
-			<ul role="list" className="mt-4 flex flex-wrap gap-2 lg:mt-0">
+			<div className="mt-2 lg:mt-0 space-y-3 text-body/relaxed text-muted-foreground">
 				{children}
-			</ul>
+			</div>
 		</div>
-	);
-}
-
-function Skill({ children }: { children: React.ReactNode }) {
-	return (
-		<li className="text-nav font-medium text-foreground bg-muted px-3 py-1.5">
-			{children}
-		</li>
 	);
 }
 
 export const metadata: Metadata = {
 	title: "Skills",
-	description: "Technologies and tools I work with on a daily basis.",
+	description: "How I think about building software.",
 };
 
 export default function Skills() {
@@ -39,56 +31,71 @@ export default function Skills() {
 		<Container className="mt-16 sm:mt-32">
 			<div className="max-w-2xl">
 				<h1 className="text-heading font-bold text-foreground sm:text-heading-lg">
-					Technologies and tools I work with.
+					How I think about building software.
 				</h1>
 				<p className="mt-6 text-body text-muted-foreground">
-					I&apos;m a full-stack engineer who leans heavily into the JavaScript
-					ecosystem. Most of my work these days is in Next.js monorepos with
-					TypeScript, but I spent years writing Java and Spring Boot before
-					that.
+					I like knowing how the layers work. What runs in the browser, what
+					runs on the server, how data moves between them. Tools change, but
+					that part stays the same.
 				</p>
 			</div>
 			<div className="mt-16 sm:mt-20">
 				<SkillSection title="Frontend">
-					<Skill>Next.js</Skill>
-					<Skill>React</Skill>
-					<Skill>TypeScript</Skill>
-					<Skill>Tailwind CSS</Skill>
-					<Skill>ShadCN UI</Skill>
+					<p>
+						Code that runs in the browser. HTML for structure, CSS for styles,
+						JavaScript for interactivity. I use React and Next.js because
+						they&apos;re fast to build with and the ecosystem is huge.
+						TypeScript because I like knowing what shape my data is before it
+						breaks something. Tailwind because I don&apos;t want to name CSS
+						classes.
+					</p>
 				</SkillSection>
 				<Separator className="my-12" />
 				<SkillSection title="Backend">
-					<Skill>Hono</Skill>
-					<Skill>Node.js</Skill>
-					<Skill>Java</Skill>
-					<Skill>Spring Boot</Skill>
-					<Skill>REST APIs</Skill>
-					<Skill>GraphQL</Skill>
+					<p>
+						Code that runs on a server. When a request comes in, figure out what
+						the client needs, validate the payload, talk to the database, return
+						something useful. I used to write this in Java with Spring Boot. Now
+						I use Node.js with Hono or Next.js API routes. Same ideas, different
+						syntax.
+					</p>
 				</SkillSection>
 				<Separator className="my-12" />
-				<SkillSection title="Databases & ORMs">
-					<Skill>Drizzle</Skill>
-					<Skill>Prisma</Skill>
+				<SkillSection title="Data">
+					<p>
+						Where things get stored. Databases hold the information that
+						persists between requests. I use Drizzle or Prisma to talk to them
+						without writing raw SQL everywhere. Zod to validate data at the
+						edges. JSON to move data between client and server. The goal is type
+						safety from the database to the UI.
+					</p>
 				</SkillSection>
 				<Separator className="my-12" />
-				<SkillSection title="Tools & Platforms">
-					<Skill>TurboRepo</Skill>
-					<Skill>Vercel</Skill>
-					<Skill>Zod</Skill>
-					<Skill>Stripe</Skill>
-					<Skill>BetterAuth</Skill>
-					<Skill>Resend</Skill>
-					<Skill>Clerk</Skill>
-					<Skill>Git</Skill>
+				<SkillSection title="Infrastructure">
+					<p>
+						Where the code actually runs. Vercel for hosting because deploys are
+						fast and I don&apos;t have to think about servers. TurboRepo for
+						monorepos when I have multiple apps sharing code. Git for version
+						control. The boring stuff that just needs to work.
+					</p>
 				</SkillSection>
 				<Separator className="my-12" />
-				<SkillSection title="AI Tooling">
-					<Skill>Claude Code</Skill>
-					<Skill>Cursor</Skill>
-					<Skill>Claude Opus 4.5</Skill>
-					<Skill>Claude Sonnet 4.5</Skill>
-					<Skill>Gemini Pro</Skill>
-					<Skill>ChatGPT 5.2</Skill>
+				<SkillSection title="Third-party services">
+					<p>
+						Things I plug in instead of building from scratch. BetterAuth or
+						Clerk for authentication. Stripe for payments. Resend for email.
+						These are solved problems. I&apos;d rather integrate them in a day
+						than spend weeks reinventing them.
+					</p>
+				</SkillSection>
+				<Separator className="my-12" />
+				<SkillSection title="AI tooling">
+					<p>
+						How I work now. Claude Code in the terminal for scaffolding and
+						refactoring. Cursor for writing code with context. I throw problems
+						at multiple models and compare what they say. The models are tools.
+						I still need to know if what they output actually makes sense.
+					</p>
 				</SkillSection>
 			</div>
 		</Container>

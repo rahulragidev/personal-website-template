@@ -1,37 +1,41 @@
-import { ExternalLink } from "lucide-react";
 import { type Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/container";
+import { Separator } from "@/components/ui/separator";
 
-const projects = [
-	{
-		name: "Gigglestack",
-		description: "More on this soon.",
-	},
-	{
-		name: "Jotdo",
-		description:
-			"A today-centric todo app I built for myself. Automatically pulls overdue tasks into today and uses a date sidebar to browse past completed work. Local-first, no cloud.",
-	},
-	{
-		name: "PheroChain",
-		description:
-			"A compliance-first vendor orchestration platform for India's largest retailers and manufacturers. Automates supplier onboarding, GST reconciliation, and purchase order cycles with AI-powered ERP integrations.",
-		link: { href: "https://www.pherochain.com/en", label: "pherochain.com" },
-	},
-	{
-		name: "YeloChess",
-		description:
-			"A chess app I built to teach chess to kids. Lets me play friendly games with students while talking to them in real time.",
-		link: { href: "https://www.yelochess.com", label: "yelochess.com" },
-	},
-	{
-		name: "Personal Website",
-		description:
-			"This site. Built with Next.js, TypeScript, and Tailwind CSS. Open source and designed to be forked.",
-		link: { href: "https://github.com/rahulragidev/personal-website-template", label: "github.com" },
-	},
-];
+function ProjectEntry({
+	name,
+	href,
+	children,
+}: {
+	name: string;
+	href?: string;
+	children: React.ReactNode;
+}) {
+	return (
+		<div className="lg:grid lg:grid-cols-[200px_1fr] lg:gap-x-16">
+			<h2 className="text-body font-semibold text-primary lg:sticky lg:top-24 lg:self-start">
+				{href ? (
+					<Link
+						href={href}
+						className="transition hover:text-foreground"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{name}
+					</Link>
+				) : (
+					name
+				)}
+			</h2>
+			<div className="mt-2 lg:mt-0">
+				<div className="space-y-3 text-body/relaxed text-muted-foreground">
+					{children}
+				</div>
+			</div>
+		</div>
+	);
+}
 
 export const metadata: Metadata = {
 	title: "Projects",
@@ -46,41 +50,32 @@ export default function Projects() {
 					Things I&apos;ve built, shipped, or am still tinkering with.
 				</h1>
 				<p className="mt-6 text-body text-muted-foreground">
-					Most of these started as side projects to scratch my own itch. Some
-					turned into something real, others are still works in progress. If
-					something looks interesting, check it out.
+					Most of these started as side projects. Some turned into something
+					real, others are still works in progress.
 				</p>
 			</div>
-			<ul
-				role="list"
-				className="mt-16 grid grid-cols-1 gap-x-12 gap-y-16 sm:mt-20 sm:grid-cols-2 lg:grid-cols-3"
-			>
-				{projects.map((project) => (
-					<li key={project.name} className="group relative flex flex-col">
-						<h2 className="text-body font-semibold text-foreground">
-							{project.link ? (
-								<Link
-									href={project.link.href}
-									className="transition hover:text-primary"
-								>
-									{project.name}
-								</Link>
-							) : (
-								project.name
-							)}
-						</h2>
-						<p className="mt-2 text-body/relaxed text-muted-foreground">
-							{project.description}
-						</p>
-						{project.link && (
-							<p className="mt-4 flex items-center text-nav font-medium text-muted-foreground transition group-hover:text-primary">
-								<ExternalLink className="h-4 w-4 flex-none" />
-								<span className="ml-2">{project.link.label}</span>
-							</p>
-						)}
-					</li>
-				))}
-			</ul>
+			<div className="mt-16 sm:mt-20">
+				<ProjectEntry name="YeloChess" href="https://www.yelochess.com">
+					<p>
+						A chess app I built to teach chess to kids. Lets me play friendly
+						games with students while talking to them in real time.
+					</p>
+				</ProjectEntry>
+				<Separator className="my-12" />
+				<ProjectEntry name="PheroChain" href="https://www.pherochain.com/en">
+					<p>
+						Vendor management for Indian retailers. Supplier onboarding, GST
+						stuff, purchase orders. Plugs into ERPs.
+					</p>
+				</ProjectEntry>
+				<Separator className="my-12" />
+				<ProjectEntry name="Jotdo">
+					<p>
+						Todo app I built for myself. Focused on today, pulls overdue stuff
+						forward automatically. Data stays on your machine.
+					</p>
+				</ProjectEntry>
+			</div>
 		</Container>
 	);
 }
