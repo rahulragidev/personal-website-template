@@ -187,10 +187,9 @@ export function ResumePDF() {
 						<View style={styles.bulletPoint}>
 							<Text style={styles.bullet}>•</Text>
 							<Text style={styles.bulletText}>
-								Architected and maintain a production-grade SaaS boilerplate
-								using Next.js 16, TurboRepo monorepo, BetterAuth, Stripe
-								subscriptions, and Hono API layer—reducing new project setup
-								from weeks to days.
+								Built and maintain a production-ready SaaS starter kit with
+								Next.js 16, TurboRepo, BetterAuth, Stripe, and Hono. Cuts new
+								project setup from weeks to days.
 							</Text>
 						</View>
 						<View style={styles.bulletPoint}>
@@ -214,9 +213,8 @@ export function ResumePDF() {
 							<Text style={styles.bullet}>•</Text>
 							<Text style={styles.bulletText}>
 								Technical consultant for Exterview.ai (AI interview platform)
-								and WeThink AI—delivered end-to-end features including
-								real-time transcription, LLM-powered analysis, and custom
-								evaluation pipelines.
+								and WeThink AI. Shipped real-time transcription, LLM-powered
+								analysis, and custom evaluation pipelines.
 							</Text>
 						</View>
 					</View>
@@ -230,10 +228,9 @@ export function ResumePDF() {
 						<View style={styles.bulletPoint}>
 							<Text style={styles.bullet}>•</Text>
 							<Text style={styles.bulletText}>
-								Built Askiy.ai from ground up for CBTS—an enterprise
-								sustainability platform enabling organizations to track carbon
-								footprint, utility spending, and generate automated ESG
-								compliance reports.
+								Built Askiy.ai from scratch for CBTS. Enterprise sustainability
+								platform for tracking carbon footprint, utility spending, and
+								generating ESG compliance reports.
 							</Text>
 						</View>
 						<View style={styles.bulletPoint}>
@@ -338,10 +335,10 @@ export function ResumePDF() {
 					<View style={styles.projectItem}>
 						<Text style={styles.projectName}>PheroChain (pherochain.com)</Text>
 						<Text style={styles.projectDescription}>
-							B2B vendor management platform for Indian retailers—handles
-							supplier onboarding, GST compliance verification, purchase order
-							workflows, and ERP integration. Built with Next.js, PostgreSQL,
-							and custom middleware for Tally/SAP data sync.
+							B2B vendor management platform for Indian retailers. Handles
+							supplier onboarding, GST compliance, purchase orders, and ERP
+							integration. Next.js, PostgreSQL, custom middleware for Tally/SAP
+							sync.
 						</Text>
 					</View>
 					<View style={styles.projectItem}>

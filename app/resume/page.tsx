@@ -134,9 +134,9 @@ export default function ResumePage() {
 						dates="Sep 2023 - Present"
 					>
 						<li>
-							Architected and maintain a production-grade SaaS boilerplate using
-							Next.js 16, TurboRepo monorepo, BetterAuth, Stripe subscriptions,
-							and Hono API layer—reducing new project setup from weeks to days.
+							Built and maintain a production-ready SaaS starter kit with Next.js
+							16, TurboRepo, BetterAuth, Stripe, and Hono. Cuts new project setup
+							from weeks to days.
 						</li>
 						<li>
 							Core contributor to Rabbitholes.ai (1,800+ users): established
@@ -151,9 +151,8 @@ export default function ResumePage() {
 						</li>
 						<li>
 							Technical consultant for Exterview.ai (AI interview platform) and
-							WeThink AI—delivered end-to-end features including real-time
-							transcription, LLM-powered analysis, and custom evaluation
-							pipelines.
+							WeThink AI. Shipped real-time transcription, LLM-powered analysis,
+							and custom evaluation pipelines.
 						</li>
 					</ExperienceItem>
 
@@ -163,10 +162,9 @@ export default function ResumePage() {
 						dates="Sep 2024 - Dec 2024"
 					>
 						<li>
-							Built Askiy.ai from ground up for CBTS—an enterprise
-							sustainability platform enabling organizations to track carbon
-							footprint, utility spending, and generate automated ESG compliance
-							reports.
+							Built Askiy.ai from scratch for CBTS. Enterprise sustainability
+							platform for tracking carbon footprint, utility spending, and
+							generating ESG compliance reports.
 						</li>
 						<li>
 							Implemented Clerk authentication with webhook-based user
@@ -260,10 +258,10 @@ export default function ResumePage() {
 								PheroChain
 							</Link>
 							<p className="text-nav text-muted-foreground">
-								B2B vendor management platform for Indian retailers—handles
-								supplier onboarding, GST compliance verification, purchase order
-								workflows, and ERP integration. Built with Next.js, PostgreSQL,
-								and custom middleware for Tally/SAP data sync.
+								B2B vendor management platform for Indian retailers. Handles
+								supplier onboarding, GST compliance, purchase orders, and ERP
+								integration. Next.js, PostgreSQL, custom middleware for
+								Tally/SAP sync.
 							</p>
 						</div>
 						<div>
