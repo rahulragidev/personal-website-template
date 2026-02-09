@@ -34,8 +34,7 @@ export function Footer() {
 						<NavLink href="/resume">Resume</NavLink>
 					</nav>
 					<p className="text-nav text-muted-foreground">
-						&copy; {new Date().getFullYear()} {siteConfig.name}. All rights
-						reserved to AI, probably.
+						&copy; {new Date().getFullYear()} {siteConfig.name}. Or the AI.
 					</p>
 				</div>
 			</Container>
