@@ -16,7 +16,7 @@ export const siteConfig = {
 
 	// Hero / Landing
 	headline: "Rahul here.",
-	bio: "I'm a developer. Full-stack. I build web apps with Next.js and TypeScript—the frontend, the backend, deployment, all of it. I'm based in Hyderabad. I also teach chess to beginners, mostly kids. Links are below.",
+	bio: "Full-stack developer. I build web apps with Next.js and TypeScript, everything from frontend to deployment. Based in Hyderabad. I also teach chess to beginners, mostly kids.",
 
 	// Site Settings
 	url: "https://rahulragi.com", // Your website URL (update this!)
