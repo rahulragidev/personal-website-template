@@ -6,6 +6,7 @@ import {
 	Text,
 	View,
 } from "@react-pdf/renderer";
+import { resumeData } from "@/lib/resume-data";
 
 const styles = StyleSheet.create({
 	page: {
@@ -133,25 +134,27 @@ const styles = StyleSheet.create({
 });
 
 export function ResumePDF() {
+	const { contact, summary, experience, skills, projects } = resumeData;
+
 	return (
 		<Document>
 			<Page size="A4" style={styles.page}>
 				{/* Header */}
 				<View style={styles.header}>
-					<Text style={styles.name}>Rahul Ragi</Text>
-					<Text style={styles.title}>Full-Stack Software Engineer</Text>
+					<Text style={styles.name}>{contact.name}</Text>
+					<Text style={styles.title}>{contact.title}</Text>
 					<View style={styles.contactRow}>
-						<Text style={styles.contactItem}>Hyderabad, India</Text>
-						<Link style={styles.link} src="mailto:iamrahulragi@gmail.com">
-							iamrahulragi@gmail.com
+						<Text style={styles.contactItem}>{contact.location}</Text>
+						<Link style={styles.link} src={`mailto:${contact.email}`}>
+							{contact.email}
 						</Link>
-						<Link style={styles.link} src="https://rahulragi.com">
-							rahulragi.com
+						<Link style={styles.link} src={contact.website}>
+							{contact.websiteLabel}
 						</Link>
-						<Link style={styles.link} src="https://linkedin.com/in/rahul-ragi">
+						<Link style={styles.link} src={contact.linkedin}>
 							LinkedIn
 						</Link>
-						<Link style={styles.link} src="https://github.com/rahulragidev">
+						<Link style={styles.link} src={contact.github}>
 							GitHub
 						</Link>
 					</View>
@@ -160,205 +163,61 @@ export function ResumePDF() {
 				{/* Summary */}
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>Summary</Text>
-					<Text style={styles.summary}>
-						Full-stack engineer with 6+ years of experience building scalable
-						web applications and APIs across enterprise and startup
-						environments. Led development of omnichannel retail integrations
-						processing millions of daily transactions for clients including
-						Landmark Group and Hindustan Unilever. Currently architecting
-						AI-powered SaaS products and consulting for early-stage startups on
-						full-stack development, system design, and GenAI integration.
-						Proficient in TypeScript/Node.js ecosystem with deep experience in
-						Java/Spring Boot enterprise systems.
-					</Text>
+					<Text style={styles.summary}>{summary}</Text>
 				</View>
 
 				{/* Experience */}
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>Experience</Text>
 
-					<View style={styles.experienceItem}>
-						<View style={styles.experienceHeader}>
-							<Text style={styles.jobTitle}>
-								Freelance Full-Stack Developer
-							</Text>
-							<Text style={styles.dates}>Sep 2023 - Present</Text>
+					{experience.map((exp) => (
+						<View key={exp.title} style={styles.experienceItem}>
+							<View style={styles.experienceHeader}>
+								<Text style={styles.jobTitle}>{exp.title}</Text>
+								<Text style={styles.dates}>{exp.dates}</Text>
+							</View>
+							{exp.company && (
+								<Text style={styles.company}>{exp.company}</Text>
+							)}
+							{exp.bullets.map((bullet) => (
+								<View key={bullet} style={styles.bulletPoint}>
+									<Text style={styles.bullet}>•</Text>
+									<Text style={styles.bulletText}>{bullet}</Text>
+								</View>
+							))}
 						</View>
-						<View style={styles.bulletPoint}>
-							<Text style={styles.bullet}>•</Text>
-							<Text style={styles.bulletText}>
-								Built and maintain a production-ready SaaS starter kit with
-								Next.js 16, TurboRepo, BetterAuth, Stripe, and Hono. Cuts new
-								project setup from weeks to days.
-							</Text>
-						</View>
-						<View style={styles.bulletPoint}>
-							<Text style={styles.bullet}>•</Text>
-							<Text style={styles.bulletText}>
-								Core contributor to Rabbitholes.ai (1,800+ users): established
-								monorepo architecture, built documentation site with Fumadocs,
-								and implemented coupon-to-license-key redemption system enabling
-								third-party reseller distribution.
-							</Text>
-						</View>
-						<View style={styles.bulletPoint}>
-							<Text style={styles.bullet}>•</Text>
-							<Text style={styles.bulletText}>
-								Developed backend services using Hono including Firecrawl web
-								scraping integration, RAG-based AI features with OpenAI
-								embeddings, and various API routes as per product requirements.
-							</Text>
-						</View>
-						<View style={styles.bulletPoint}>
-							<Text style={styles.bullet}>•</Text>
-							<Text style={styles.bulletText}>
-								Technical consultant for Exterview.ai (AI interview platform)
-								and WeThink AI. Shipped real-time transcription, LLM-powered
-								analysis, and custom evaluation pipelines.
-							</Text>
-						</View>
-					</View>
-
-					<View style={styles.experienceItem}>
-						<View style={styles.experienceHeader}>
-							<Text style={styles.jobTitle}>Full-Stack Developer</Text>
-							<Text style={styles.dates}>Sep 2024 - Dec 2024</Text>
-						</View>
-						<Text style={styles.company}>WTA GenAI / Askiy.ai</Text>
-						<View style={styles.bulletPoint}>
-							<Text style={styles.bullet}>•</Text>
-							<Text style={styles.bulletText}>
-								Built Askiy.ai from scratch for CBTS. Enterprise sustainability
-								platform for tracking carbon footprint, utility spending, and
-								generating ESG compliance reports.
-							</Text>
-						</View>
-						<View style={styles.bulletPoint}>
-							<Text style={styles.bullet}>•</Text>
-							<Text style={styles.bulletText}>
-								Implemented Clerk authentication with webhook-based user
-								provisioning, built REST APIs for utility spending and
-								sustainability data tracking.
-							</Text>
-						</View>
-					</View>
-
-					<View style={styles.experienceItem}>
-						<View style={styles.experienceHeader}>
-							<Text style={styles.jobTitle}>Software Engineer</Text>
-							<Text style={styles.dates}>Jul 2018 - Sep 2023</Text>
-						</View>
-						<Text style={styles.company}>Vinculum Group</Text>
-						<View style={styles.bulletPoint}>
-							<Text style={styles.bullet}>•</Text>
-							<Text style={styles.bulletText}>
-								Developed and maintained REST APIs for Vin eRetail, an
-								omnichannel OMS/WMS platform processing 2M+ daily orders for
-								enterprise clients including Landmark Group (6,000+ stores),
-								SPAR India, and Hindustan Unilever.
-							</Text>
-						</View>
-						<View style={styles.bulletPoint}>
-							<Text style={styles.bullet}>•</Text>
-							<Text style={styles.bulletText}>
-								Led integration development for 15+ marketplace connectors
-								(Amazon, Flipkart, Myntra), implementing real-time inventory
-								sync, order routing logic, and fault-tolerant message queues.
-							</Text>
-						</View>
-						<View style={styles.bulletPoint}>
-							<Text style={styles.bullet}>•</Text>
-							<Text style={styles.bulletText}>
-								Embedded on-site at SPAR India HQ for 2 years: owned ETL
-								pipeline development for POS/ERP data, built automated
-								reporting system generating 50+ daily Excel/PDF reports, and
-								collaborated directly with business stakeholders on sprint
-								planning.
-							</Text>
-						</View>
-						<View style={styles.bulletPoint}>
-							<Text style={styles.bullet}>•</Text>
-							<Text style={styles.bulletText}>
-								Built internal tools for MDM teams enabling better data
-								management workflows and automated audit report generation.
-							</Text>
-						</View>
-					</View>
+					))}
 				</View>
 
 				{/* Skills */}
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>Technical Skills</Text>
 					<View style={styles.skillsGrid}>
-						<View style={styles.skillCategory}>
-							<Text style={styles.skillLabel}>Languages: </Text>
-							<Text style={styles.skillValue}>
-								TypeScript, JavaScript, Java, SQL, HTML/CSS
-							</Text>
-						</View>
-						<View style={styles.skillCategory}>
-							<Text style={styles.skillLabel}>Frontend: </Text>
-							<Text style={styles.skillValue}>
-								React, Next.js 16, Tailwind CSS, Zustand, React Query
-							</Text>
-						</View>
-						<View style={styles.skillCategory}>
-							<Text style={styles.skillLabel}>Backend: </Text>
-							<Text style={styles.skillValue}>
-								Node.js, Hono, Spring Boot, REST APIs, WebSockets
-							</Text>
-						</View>
-						<View style={styles.skillCategory}>
-							<Text style={styles.skillLabel}>Databases: </Text>
-							<Text style={styles.skillValue}>
-								PostgreSQL, MySQL, Redis, Drizzle ORM, Prisma
-							</Text>
-						</View>
-						<View style={styles.skillCategory}>
-							<Text style={styles.skillLabel}>Infrastructure: </Text>
-							<Text style={styles.skillValue}>
-								Vercel, AWS (S3, Lambda), Docker, TurboRepo, Git
-							</Text>
-						</View>
-						<View style={styles.skillCategory}>
-							<Text style={styles.skillLabel}>AI/ML: </Text>
-							<Text style={styles.skillValue}>
-								OpenAI API, LangChain, RAG, Embeddings, Prompt Engineering
-							</Text>
-						</View>
+						{skills.map((skill) => (
+							<View key={skill.label} style={styles.skillCategory}>
+								<Text style={styles.skillLabel}>{skill.label}: </Text>
+								<Text style={styles.skillValue}>{skill.value}</Text>
+							</View>
+						))}
 					</View>
 				</View>
 
 				{/* Projects */}
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>Projects</Text>
-					<View style={styles.projectItem}>
-						<Text style={styles.projectName}>PheroChain (pherochain.com)</Text>
-						<Text style={styles.projectDescription}>
-							B2B vendor management platform for Indian retailers. Handles
-							supplier onboarding, GST compliance, purchase orders, and ERP
-							integration. Next.js, PostgreSQL, custom middleware for Tally/SAP
-							sync.
-						</Text>
-					</View>
-					<View style={styles.projectItem}>
-						<Text style={styles.projectName}>YeloChess (yelochess.com)</Text>
-						<Text style={styles.projectDescription}>
-							Real-time chess coaching platform with reactive game sync using
-							Convex database, integrated Lichess puzzle database for training
-							exercises. Teaches 20+ students weekly. Stack: Next.js, Chess.js,
-							react-chessboard, Convex.
-						</Text>
-					</View>
-					<View style={styles.projectItem}>
-						<Text style={styles.projectName}>Jotdo</Text>
-						<Text style={styles.projectDescription}>
-							Privacy-first task manager with local-only storage using
-							IndexedDB. Features automatic task rollover, daily focus view,
-							and keyboard-driven UX. Built with React and Zustand for offline
-							state management.
-						</Text>
-					</View>
+					{projects.map((project) => (
+						<View key={project.name} style={styles.projectItem}>
+							<Text style={styles.projectName}>
+								{project.name}
+								{project.url
+									? ` (${project.url.replace("https://", "")})`
+									: ""}
+							</Text>
+							<Text style={styles.projectDescription}>
+								{project.description}
+							</Text>
+						</View>
+					))}
 				</View>
 			</Page>
 		</Document>
