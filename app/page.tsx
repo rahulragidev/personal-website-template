@@ -19,7 +19,7 @@ function SocialLink({
 		<li>
 			<Link
 				href={href}
-				className="group flex items-center text-nav font-medium text-foreground transition hover:text-primary"
+				className="group -mx-2 flex items-center px-2 py-2 text-nav font-medium text-foreground transition hover:text-primary"
 			>
 				<Icon className="h-5 w-5 flex-none text-muted-foreground transition group-hover:text-primary" />
 				<span className="ml-4">{children}</span>
@@ -54,9 +54,9 @@ function XIcon({ className }: { className?: string }) {
 
 export default function Page() {
 	return (
-		<Container className="mt-16 sm:mt-32">
-			<div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
-				<div className="lg:pl-20">
+		<Container className="mt-12 sm:mt-32">
+			<div className="grid grid-cols-1 gap-y-12 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+				<div className="order-2 lg:order-0 lg:pl-20">
 					<div className="max-w-xs px-2.5 lg:max-w-none">
 						<Image
 							src={portraitImage}
@@ -67,16 +67,16 @@ export default function Page() {
 						/>
 					</div>
 				</div>
-				<div className="lg:order-first lg:row-span-2">
-					<h1 className="text-heading font-bold text-foreground sm:text-heading-lg">
+				<div className="order-1 lg:order-first lg:row-span-2">
+					<h1 className="text-2xl font-bold text-foreground sm:text-heading-lg">
 						{siteConfig.headline}
 					</h1>
-					<div className="mt-6 space-y-7 text-body text-muted-foreground">
+					<div className="mt-4 space-y-7 text-body text-muted-foreground sm:mt-6">
 						<p>{siteConfig.bio}</p>
 					</div>
 				</div>
-				<div className="lg:pl-20">
-					<ul role="list" className="space-y-4">
+				<div className="order-3 lg:order-0 lg:pl-20">
+					<ul role="list" className="space-y-1">
 						<SocialLink href="https://x.com/iamrahulragi" icon={XIcon}>
 							Follow on X
 						</SocialLink>

@@ -52,9 +52,9 @@ export const metadata = {
 
 export default function Uses() {
 	return (
-		<Container className="mt-16 sm:mt-32">
+		<Container className="mt-12 sm:mt-32">
 			<div className="max-w-2xl">
-				<h1 className="text-heading font-bold text-foreground sm:text-heading-lg">
+				<h1 className="text-2xl font-bold text-foreground sm:text-heading-lg">
 					My setup, my tools, and the stuff I actually use every day.
 				</h1>
 				<p className="mt-6 text-body text-muted-foreground">
@@ -65,7 +65,7 @@ export default function Uses() {
 					Last updated February 2026
 				</p>
 			</div>
-			<div className="mt-16 sm:mt-20">
+			<div className="mt-10 sm:mt-20">
 				<ToolsSection title="Workstation">
 					<Tool
 						title="MacBook Pro M3"
@@ -118,7 +118,7 @@ export default function Uses() {
 						like most ergonomic chairs people recommend. The armrests help.
 					</Tool>
 				</ToolsSection>
-				<Separator className="my-12" />
+				<Separator className="my-8 sm:my-12" />
 				<ToolsSection title="Development tools">
 					<Tool title="Cursor" href="https://cursor.com">
 						Where I write code. It&apos;s basically VS Code so my extensions
@@ -140,7 +140,7 @@ export default function Uses() {
 						network panel and performance tab.
 					</Tool>
 				</ToolsSection>
-				<Separator className="my-12" />
+				<Separator className="my-8 sm:my-12" />
 				<ToolsSection title="AI assistants">
 					<Tool
 						title="Claude Code"
@@ -174,7 +174,7 @@ export default function Uses() {
 						unfamiliar codebases and exploring solutions I haven&apos;t considered.
 					</Tool>
 				</ToolsSection>
-				<Separator className="my-12" />
+				<Separator className="my-8 sm:my-12" />
 				<ToolsSection title="MCP servers">
 					<Tool title="Context7" href="https://context7.com">
 						Feeds current docs into Cursor and Claude Code so they stop
@@ -202,7 +202,7 @@ export default function Uses() {
 						screenshots, which works better than I expected.
 					</Tool>
 				</ToolsSection>
-				<Separator className="my-12" />
+				<Separator className="my-8 sm:my-12" />
 				<ToolsSection title="Productivity">
 					<Tool title="Raycast" href="https://www.raycast.com">
 						Replaced Spotlight. I mostly use it for clipboard history and moving

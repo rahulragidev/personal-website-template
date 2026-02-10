@@ -25,7 +25,7 @@ function MobileNavItem({
 }) {
 	return (
 		<li>
-			<PopoverButton as={Link} href={href} className="block py-2">
+			<PopoverButton as={Link} href={href} className="block py-3">
 				{children}
 			</PopoverButton>
 		</li>

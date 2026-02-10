@@ -44,7 +44,7 @@ export default function RootLayout({
 				className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background`}
 			>
 				<Providers>
-					<div className="flex w-full">
+					<div className="flex w-full overflow-x-hidden">
 						<div className="fixed inset-0 flex justify-center sm:px-8">
 							<div className="flex w-full max-w-7xl lg:px-8">
 								<div className="w-full rotate-2 scale-110 bg-background ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20" />

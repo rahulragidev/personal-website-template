@@ -28,9 +28,9 @@ export const metadata: Metadata = {
 
 export default function Skills() {
 	return (
-		<Container className="mt-16 sm:mt-32">
+		<Container className="mt-12 sm:mt-32">
 			<div className="max-w-2xl">
-				<h1 className="text-heading font-bold text-foreground sm:text-heading-lg">
+				<h1 className="text-2xl font-bold text-foreground sm:text-heading-lg">
 					How I think about building software.
 				</h1>
 				<p className="mt-6 text-body text-muted-foreground">
@@ -39,7 +39,7 @@ export default function Skills() {
 					that part stays the same.
 				</p>
 			</div>
-			<div className="mt-16 sm:mt-20">
+			<div className="mt-10 sm:mt-20">
 				<SkillSection title="Frontend">
 					<p>
 						Code that runs in the browser. HTML for structure, CSS for styles,
@@ -50,7 +50,7 @@ export default function Skills() {
 						classes.
 					</p>
 				</SkillSection>
-				<Separator className="my-12" />
+				<Separator className="my-8 sm:my-12" />
 				<SkillSection title="Backend">
 					<p>
 						Code that runs on a server. When a request comes in, figure out what
@@ -60,7 +60,7 @@ export default function Skills() {
 						syntax.
 					</p>
 				</SkillSection>
-				<Separator className="my-12" />
+				<Separator className="my-8 sm:my-12" />
 				<SkillSection title="Data">
 					<p>
 						Where things get stored. Databases hold the information that
@@ -70,7 +70,7 @@ export default function Skills() {
 						safety from the database to the UI.
 					</p>
 				</SkillSection>
-				<Separator className="my-12" />
+				<Separator className="my-8 sm:my-12" />
 				<SkillSection title="Infrastructure">
 					<p>
 						Where the code actually runs. Vercel for hosting because deploys are
@@ -79,7 +79,7 @@ export default function Skills() {
 						control. The boring stuff that just needs to work.
 					</p>
 				</SkillSection>
-				<Separator className="my-12" />
+				<Separator className="my-8 sm:my-12" />
 				<SkillSection title="Third-party services">
 					<p>
 						Things I plug in instead of building from scratch. BetterAuth or
@@ -88,7 +88,7 @@ export default function Skills() {
 						than spend weeks reinventing them.
 					</p>
 				</SkillSection>
-				<Separator className="my-12" />
+				<Separator className="my-8 sm:my-12" />
 				<SkillSection title="AI tooling">
 					<p>
 						How I work now. Claude Code in the terminal for scaffolding and

@@ -22,11 +22,11 @@ function NavLink({
 
 export function Footer() {
 	return (
-		<footer className="mt-32 flex-none">
+		<footer className="mt-16 flex-none sm:mt-32">
 			<Container>
 				<Separator />
-				<div className="flex flex-col items-center justify-between gap-6 py-10 sm:flex-row">
-					<nav className="flex gap-x-6">
+				<div className="flex flex-col items-center justify-between gap-6 py-8 sm:flex-row sm:py-10">
+					<nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
 						<NavLink href="/skills">Skills</NavLink>
 						<NavLink href="/projects">Projects</NavLink>
 						<NavLink href="/changelog">Changelog</NavLink>

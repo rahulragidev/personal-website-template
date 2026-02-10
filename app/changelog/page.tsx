@@ -40,9 +40,9 @@ export const metadata: Metadata = {
 
 export default function Changelog() {
 	return (
-		<Container className="mt-16 sm:mt-32">
+		<Container className="mt-12 sm:mt-32">
 			<div className="max-w-2xl">
-				<h1 className="text-heading font-bold text-foreground sm:text-heading-lg">
+				<h1 className="text-2xl font-bold text-foreground sm:text-heading-lg">
 					Where I&apos;ve been and what I&apos;ve been working on.
 				</h1>
 				<p className="mt-6 text-body text-muted-foreground">
@@ -51,7 +51,7 @@ export default function Changelog() {
 					lot about end-to-end type safety, and work on whatever interests me.
 				</p>
 			</div>
-			<div className="mt-16 sm:mt-20">
+			<div className="mt-10 sm:mt-20">
 				<TimelineEntry
 					date="Sep 2023 - Present"
 					title="Freelance Full-Stack Developer"
@@ -75,7 +75,7 @@ export default function Changelog() {
 						keeping things moving.
 					</p>
 				</TimelineEntry>
-				<Separator className="my-12" />
+				<Separator className="my-8 sm:my-12" />
 				<TimelineEntry
 					date="Sep 2024 - Dec 2024"
 					title="Full-Stack Developer"
@@ -87,7 +87,7 @@ export default function Changelog() {
 						APIs for utility spending and sustainability data. Lots of forms.
 					</p>
 				</TimelineEntry>
-				<Separator className="my-12" />
+				<Separator className="my-8 sm:my-12" />
 				<TimelineEntry
 					date="Jul 2018 - Sep 2023"
 					title="Software Engineer"
@@ -106,7 +106,7 @@ export default function Changelog() {
 						instead of Java.
 					</p>
 				</TimelineEntry>
-				<Separator className="my-12" />
+				<Separator className="my-8 sm:my-12" />
 				<TimelineEntry
 					date="Oct 2018 - Dec 2020"
 					title="Software Engineer"

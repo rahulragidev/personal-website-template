@@ -58,12 +58,12 @@ export default function ResumePage() {
 	const { contact, summary, experience, skills, projects } = resumeData;
 
 	return (
-		<Container className="mt-16 sm:mt-32">
+		<Container className="mt-12 sm:mt-32">
 			<div className="max-w-2xl">
 				{/* Header */}
-				<div className="flex justify-between items-start flex-wrap gap-4 mb-2">
+				<div className="flex flex-col gap-4 mb-2 sm:flex-row sm:justify-between sm:items-start">
 					<div>
-						<h1 className="text-heading font-bold text-foreground">
+						<h1 className="text-2xl font-bold text-foreground sm:text-heading">
 							{contact.name}
 						</h1>
 						<p className="text-body text-muted-foreground">
@@ -72,30 +72,30 @@ export default function ResumePage() {
 					</div>
 					<Link
 						href="/api/resume"
-						className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground text-nav font-medium rounded-md hover:bg-primary/90 transition-colors"
+						className="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-primary text-primary-foreground text-nav font-medium rounded-md hover:bg-primary/90 transition-colors sm:py-2"
 					>
 						<Download className="h-4 w-4" />
 						Download PDF
 					</Link>
 				</div>
 
-				<div className="flex flex-wrap gap-x-4 gap-y-1 text-nav text-muted-foreground mb-8">
+				<div className="flex flex-col gap-1 text-nav text-muted-foreground mb-8 sm:flex-row sm:flex-wrap sm:gap-x-4 sm:gap-y-1">
 					<span>{contact.location}</span>
-					<span>•</span>
+					<span className="hidden sm:inline">•</span>
 					<Link
 						href={`mailto:${contact.email}`}
 						className="text-primary hover:underline"
 					>
 						{contact.email}
 					</Link>
-					<span>•</span>
+					<span className="hidden sm:inline">•</span>
 					<Link
 						href={contact.website}
 						className="text-primary hover:underline"
 					>
 						{contact.websiteLabel}
 					</Link>
-					<span>•</span>
+					<span className="hidden sm:inline">•</span>
 					<Link
 						href={contact.linkedin}
 						className="text-primary hover:underline"
@@ -103,7 +103,7 @@ export default function ResumePage() {
 					>
 						LinkedIn
 					</Link>
-					<span>•</span>
+					<span className="hidden sm:inline">•</span>
 					<Link
 						href={contact.github}
 						className="text-primary hover:underline"
