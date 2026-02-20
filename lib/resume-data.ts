@@ -19,7 +19,7 @@ export interface ProjectEntry {
 export const resumeData = {
 	contact: {
 		name: "Rahul Ragi",
-		title: "Full-Stack Software Engineer",
+		title: "Senior Full-Stack Engineer",
 		location: "Hyderabad, India",
 		email: "iamrahulragi@gmail.com",
 		website: "https://rahulragi.com",
@@ -29,17 +29,18 @@ export const resumeData = {
 	},
 
 	summary:
-		"Full-stack engineer with 6+ years of experience building scalable web applications and APIs across enterprise and startup environments. Led development of omnichannel retail integrations for enterprise clients including Landmark Group and Hindustan Unilever. Currently architecting AI-powered SaaS products and consulting for early-stage startups on full-stack development, system design, and GenAI integration. Proficient in TypeScript/Node.js ecosystem with deep experience in Java/Spring Boot enterprise systems.",
+		"Senior full-stack engineer with 7+ years building and shipping production systems across enterprise retail and AI-native SaaS, focused on ERP and back-office integrations. Experienced in designing data synchronization pipelines, vendor and finance workflows, and multi-tenant SaaS connectors using Node.js, TypeScript, and cloud-native stacks. Comfortable owning integrations end-to-end, from requirements with business stakeholders to secure, observable, high-volume data flows between ERP and SaaS platforms.",
 
 	experience: [
 		{
-			title: "Freelance Full-Stack Developer",
+			title: "Freelance Senior Full-Stack & Integration Engineer",
 			dates: "Sep 2023 - Present",
 			bullets: [
-				"Built and maintain a production-ready SaaS starter kit with Next.js 16, TurboRepo, BetterAuth, Stripe, and Hono. Cuts new project setup from weeks to days.",
-				"Contributed to Rabbitholes.ai: established monorepo architecture, built documentation site with Fumadocs, and implemented coupon-to-license-key redemption system enabling third-party reseller distribution.",
-				"Developed backend services using Hono including Firecrawl web scraping integration, RAG-based AI features with OpenAI embeddings, and various API routes as per product requirements.",
-				"Hourly technical consultant for Exterview.ai (AI interview platform) and WeThink AI. Conducted code reviews, recommended monorepo architecture based on product direction, and implemented Notion note-taking integration for Gradientflow (WeThink AI).",
+				"Co-engineered Rabbitholes.ai (2,000+ users), an AI-powered infinite canvas for branching LLM conversations. Architected a monorepo and RAG pipeline that reliably retrieves context across large conversation nodes for production users.",
+				"Designed and implemented a coupon-to-license-key redemption API used by reseller partners (DealFuel, Product Canyon). Included secure server-side key generation and activation flows, directly enabling a new B2B revenue channel.",
+				"Architected a modular monorepo SaaS starter kit (Next.js, TurboRepo, BetterAuth, Stripe, Hono) with isolated packages for auth, payments, API, and database. Optimized for multi-tenant SaaS products and AI-agent-driven development.",
+				"Built PheroChain, a B2B vendor management platform for Indian retailers. Automated supplier onboarding, GST compliance, and purchase order lifecycle.",
+				"Consulted for AI startups (Exterview.ai, WeThink AI), conducting architecture reviews and driving monorepo adoption to make codebases more observable and AI-agent-friendly. Established structured context files and consistent integration boundaries.",
 			],
 		},
 		{
@@ -47,8 +48,10 @@ export const resumeData = {
 			company: "WTA GenAI / Askiy.ai",
 			dates: "Sep 2024 - Dec 2024",
 			bullets: [
-				"Built Askiy.ai from scratch for CBTS. Enterprise sustainability platform for tracking carbon footprint, utility spending, and generating ESG compliance reports.",
-				"Implemented Clerk authentication with webhook-based user provisioning, built REST APIs for utility spending and sustainability data tracking.",
+				"Delivered Askiy.ai MVP in 3 months, an enterprise sustainability platform for CBTS used to track carbon footprint, utility spend, and ESG KPIs across multiple facilities in a SaaS environment.",
+				"Designed the relational data model with Drizzle ORM, enforcing end-to-end type safety from PostgreSQL through backend services to the React frontend. Eliminated entire classes of runtime type errors.",
+				"Implemented Clerk-based authentication with webhook-driven user provisioning and organization/role management. Secured multi-tenant access to sustainability and financial reporting data.",
+				"Built REST APIs for high-volume sustainability data ingestion and reporting. Included pagination, filtering, and aggregation endpoints tuned for analytics dashboards.",
 			],
 		},
 		{
@@ -56,21 +59,22 @@ export const resumeData = {
 			company: "Vinculum Group",
 			dates: "Jul 2018 - Sep 2023",
 			bullets: [
-				"Developed and maintained REST APIs for Vin eRetail, an omnichannel OMS/WMS platform processing 2M+ daily orders for enterprise clients including Landmark Group, SPAR India, and Hindustan Unilever.",
-				"Led integration development for 15+ marketplace connectors (Amazon, Flipkart, Myntra), implementing real-time inventory sync, order routing logic, and fault-tolerant message queues.",
-				"Embedded on-site at SPAR India HQ for 2 years: owned ETL pipeline development for POS/ERP data, built automated reporting system generating 50+ daily Excel/PDF reports, and collaborated directly with business stakeholders on sprint planning.",
-				"Built internal tools for MDM teams enabling better data management workflows and automated audit report generation.",
+				"Engineered supply-chain integration APIs for Vin eRetail, an omnichannel OMS/WMS platform used by enterprise retailers such as Landmark Group, SPAR India, and Hindustan Unilever. Handled order, inventory, and catalog synchronization at scale.",
+				"Built and maintained ERP synchronization layers using EDI transactions, FTP-based CSV batch ingestion, and scheduled cron jobs. Kept OMS, WMS, and ERP systems in sync for orders, stock, and invoices.",
+				"Embedded on-site at SPAR India HQ for 2 years across 120+ stores as primary technical liaison between buyers, department heads, commercial, and MDM teams. Shipped PO workflow automation, vendor onboarding flows, and 50+ automated daily reports that lowered manual reconciliation effort for finance and MDM teams.",
+				"Developed data reconciliation tools and UI dashboards for MDM teams to validate data correctness between Vin eRetail and ERP systems. Surfaced discrepancies across purchase orders, invoices, and vendor master records for timely resolution.",
 			],
 		},
 	] satisfies ExperienceEntry[],
 
 	skills: [
 		{ label: "Languages", value: "TypeScript, JavaScript, Java, SQL, HTML/CSS" },
-		{ label: "Frontend", value: "React, Next.js 16, Tailwind CSS, Zustand, React Query" },
-		{ label: "Backend", value: "Node.js, Hono, Spring Boot, REST APIs, WebSockets" },
-		{ label: "Databases", value: "PostgreSQL, MySQL, Redis, Convex, Drizzle ORM, Prisma" },
-		{ label: "Infrastructure", value: "Vercel, AWS (S3, Lambda), Docker, TurboRepo, Git" },
-		{ label: "AI/ML", value: "OpenAI API, LangChain, RAG, Embeddings, Prompt Engineering" },
+		{ label: "Backend & Integrations", value: "Node.js, REST APIs, WebSockets, integration middleware, data synchronization pipelines, cron-based batch jobs" },
+		{ label: "ERP & Finance Systems", value: "Oracle Fusion Cloud ERP, omnichannel OMS/WMS (Vin eRetail), vendor onboarding, purchase order and invoice workflows, data reconciliation tools" },
+		{ label: "Frontend", value: "React, Next.js, Tailwind CSS, Zustand, React Query" },
+		{ label: "Datastores", value: "PostgreSQL, MySQL, Redis, Convex, Drizzle ORM, Prisma" },
+		{ label: "Infra & DevOps", value: "AWS (S3, Lambda), Vercel, Docker, TurboRepo, monorepo architecture" },
+		{ label: "AI / Automation", value: "RAG pipelines, AI Provider API, LangChain, LLM context engineering, AI-agent-friendly architectures" },
 	] satisfies SkillEntry[],
 
 	projects: [
@@ -78,18 +82,18 @@ export const resumeData = {
 			name: "PheroChain",
 			url: "https://pherochain.com",
 			description:
-				"B2B vendor management platform for Indian retailers. Handles supplier onboarding, GST compliance, purchase orders, and ERP integration. Next.js, PostgreSQL, custom middleware for Tally/SAP sync.",
+				"B2B vendor management platform for Indian retailers built on a custom monorepo SaaS starter kit. Automates supplier onboarding, GST compliance, purchase order lifecycle, and ERP integration with custom middleware for Tally/SAP sync. Stack: Next.js, PostgreSQL, Hono, Drizzle ORM.",
 		},
 		{
 			name: "YeloChess",
 			url: "https://yelochess.com",
 			description:
-				"Real-time chess coaching platform with reactive game sync using Convex database, integrated Lichess puzzle database for training exercises. Teaches 7 students weekly. Stack: Next.js, Chess.js, react-chessboard, Convex.",
+				"Real-time chess training platform with reactive game synchronization powered by Convex database. Features integrated Lichess puzzle engine and live multiplayer sessions. Stack: Next.js, Chess.js, react-chessboard, Convex.",
 		},
 		{
 			name: "Jotdo",
 			description:
-				"Privacy-first task manager with local-only storage using IndexedDB. Features automatic task rollover, daily focus view, and keyboard-driven UX. Built with React and Zustand for offline state management.",
+				"Privacy-first task manager with zero-server architecture using IndexedDB for local-only storage. Features automatic task rollover, daily focus view, and keyboard-driven UX. Stack: React, Zustand.",
 		},
 	] satisfies ProjectEntry[],
 } as const;
